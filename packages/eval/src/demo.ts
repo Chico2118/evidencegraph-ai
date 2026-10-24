@@ -10,7 +10,7 @@
 // The mock is NOT a language model; see mock-llm.ts.
 
 import { spawn } from "node:child_process";
-import { mkdir, rm } from "node:fs/promises";
+import { mkdir, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -25,6 +25,7 @@ import {
   DEFAULT_GLOBAL_CONFIG,
 } from "@evidencegraph/core";
 
+import { assertSafeToReseed, DEMO_MARKER, DEMO_MARKER_TEXT } from "./demo-guard";
 import { loadFixtures } from "./fixtures";
 import type { MockMode } from "./mock-llm";
 import { startMockServer } from "./mock-server";
@@ -40,8 +41,10 @@ function flag(args: string[], name: string): string | undefined {
 
 export async function seedDemoWiki(wikiPath: string): Promise<void> {
   const fixtures = loadFixtures();
+  await assertSafeToReseed(wikiPath); // never delete a folder that is not clearly a demo wiki
   await rm(wikiPath, { recursive: true, force: true });
   await initWikiFolder(wikiPath); // settings.json needs the folder first
+  await writeFile(join(wikiPath, DEMO_MARKER), DEMO_MARKER_TEXT, "utf8");
 
   const model = { provider: "ollama" as const, model: "mock-evidence-model" };
   await saveWikiSettings(wikiPath, {

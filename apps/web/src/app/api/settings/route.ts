@@ -8,6 +8,7 @@ import {
   type WikiSettings,
 } from "@evidencegraph/core";
 
+import { isDemoMode } from "@/lib/demo-policy";
 import { resolveWikiPath } from "@/lib/server-wiki";
 
 export const dynamic = "force-dynamic";
@@ -15,7 +16,8 @@ export const dynamic = "force-dynamic";
 export async function GET() {
   const wikiPath = resolveWikiPath();
   const settings = await loadWikiSettings(wikiPath);
-  return NextResponse.json({ settings, wikiPath });
+  // The public demo must not reveal where the server keeps its files.
+  return NextResponse.json({ settings, wikiPath: isDemoMode() ? "" : wikiPath });
 }
 
 type PutBody = Partial<{

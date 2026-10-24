@@ -29,7 +29,7 @@ type RunPayload = {
 type Failure = { ok?: false; error: string; type?: string };
 type RunSummary = { id: string; question: string; model: string; createdAt: string; confidence: string };
 
-export function QueryView() {
+export function QueryView({ demo = false }: { demo?: boolean }) {
   const searchParams = useSearchParams();
   const settings = useWikiSettings();
 
@@ -268,8 +268,9 @@ export function QueryView() {
                 {busy ? "Working…" : "Ask"}
               </Button>
               <p className="text-xs text-muted-foreground">
-                Ctrl/Cmd + Enter · sends your question and relevant wiki passages to your configured model
-                provider
+                {demo
+                  ? "Ctrl/Cmd + Enter · answered by the built-in stand-in on this server; nothing is sent to a model provider or saved"
+                  : "Ctrl/Cmd + Enter · sends your question and relevant wiki passages to your configured model provider"}
               </p>
             </div>
             {settings?.settings.showCostEstimates && question.trim() ? (

@@ -20,7 +20,9 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,css}\"",
     "eval": "pnpm --filter @evidencegraph/eval eval --",
     "eval:check": "pnpm --filter @evidencegraph/eval eval -- --check && pnpm --filter @evidencegraph/eval eval -- --check --heldout",
-    "demo": "pnpm --filter @evidencegraph/eval demo --"
+    "demo": "pnpm --filter @evidencegraph/eval demo --",
+    "demo:seed": "tsx packages/eval/src/demo.ts --seed-only --dir apps/web/demo-data/wiki",
+    "start:demo": "node apps/web/scripts/start-demo.mjs"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",

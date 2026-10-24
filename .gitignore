@@ -33,6 +33,9 @@ pnpm-debug.log*
 # Wiki tooling state (per-wiki .llm-wiki/ folders are gitignored at the wiki root,
 # not here — this repo isn't a wiki)
 
+# Generated synthetic demo wiki for the read-only public demo (pnpm demo:seed)
+apps/web/demo-data/
+
 # Local review/screenshot scratch
 ss/
 

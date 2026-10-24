@@ -147,6 +147,16 @@ pnpm dev                       # http://localhost:3000
 
 The first-run wizard asks for a wiki topic and a provider: an OpenRouter key (stored in your OS keychain) or a local [Ollama](https://ollama.com) server. Then add sources in **Library** and ask questions in **Research**.
 
+**Read-only public demo** (for hosting a showcase; not the way to use the app for real work):
+
+```bash
+pnpm build                     # production build
+pnpm demo:seed                 # builds the synthetic wiki in apps/web/demo-data (git-ignored)
+pnpm start:demo                # http://127.0.0.1:3000, EVIDENCEGRAPH_DEMO=1
+```
+
+In demo mode the server answers from the synthetic wiki only. Visitors can browse pages, the graph, evidence and the contradiction explorer, and ask questions, which a built-in deterministic mock answers (it quotes the best-matching passage; it is **not a language model**, and a banner says so). Everything that writes or configures is refused **by the server**, not just hidden: ingesting, editing, deleting, URL fetching, settings, API keys, workspaces, chats, export. Questions are not saved, and are rate-limited (8 a minute per visitor, 120 other API calls a minute, 240 page loads a minute; in memory, per server instance). `GET /api/health` is the uptime check. The demo has no API key: any key in its environment is removed. It needs a folder it can write to (the search index is a SQLite file next to the wiki). See [`docs/evidencegraph/deployment.md`](docs/evidencegraph/deployment.md) for what this does and does not cover.
+
 ### Configuration
 
 See [`.env.example`](.env.example). Nothing is required.
@@ -159,6 +169,8 @@ See [`.env.example`](.env.example). Nothing is required.
 | `OPENROUTER_API_KEY` | Read **only** by `pnpm eval --live` |
 | `EVIDENCEGRAPH_OPENROUTER_API_KEY` | Optional: the app's key, for a server with no OS keychain. When set it is never stored and cannot be changed from Settings. Otherwise the app uses the OS keychain |
 | `EVIDENCEGRAPH_ALLOW_PRIVATE_URLS` | Set to `1` to let URL ingestion fetch private and local addresses (blocked by default) |
+| `EVIDENCEGRAPH_DEMO` | Set to `1` for the read-only public demo (set by `pnpm start:demo`); never set it for real use |
+| `EVIDENCEGRAPH_DEMO_HOST` | Address `pnpm start:demo` binds to (default `127.0.0.1`; a host with a proxy in front needs `0.0.0.0`) |
 
 ### Commands
 

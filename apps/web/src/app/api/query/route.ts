@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 import { appendResearchRun, getApiKey, queryWiki, verifyQueryResponse } from "@evidencegraph/core";
 import { createClient, ContextLengthError, RateLimitError, UnknownModelError } from "@evidencegraph/llm";
 
+import { createDemoClient, DEMO_MODEL } from "@/lib/demo-client";
+import { isDemoMode } from "@/lib/demo-policy";
 import { openWikiContext } from "@/lib/server-wiki";
 
 export const dynamic = "force-dynamic";
@@ -24,17 +26,20 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "question must be a non-empty string" }, { status: 400 });
   }
 
-  const { key } = await getApiKey();
+  // Public demo: answered in-process by the deterministic mock. No key lookup, no network, nothing saved.
+  const demo = isDemoMode();
+  const { key } = demo ? { key: null } : await getApiKey();
   const ctx = await openWikiContext();
   const provider = ctx.settings.defaultModels.query.provider;
-  if (provider === "openrouter" && !key) {
+  if (!demo && provider === "openrouter" && !key) {
     return NextResponse.json(
       { error: "OpenRouter API key not configured. Set one in Settings." },
       { status: 400 },
     );
   }
-  const client = createClient(key || "", provider);
-  const model = body.model ?? ctx.settings.defaultModels.query.model;
+  const client = demo ? createDemoClient() : createClient(key || "", provider);
+  // A visitor cannot pick the model in the demo: only the mock exists.
+  const model = demo ? DEMO_MODEL : (body.model ?? ctx.settings.defaultModels.query.model);
 
   try {
     const response = await queryWiki({
@@ -48,10 +53,13 @@ export async function POST(req: Request) {
     // UI never has to trust the model's own claims about its sources.
     const evidence = await verifyQueryResponse({ wikiPath: ctx.wikiPath, db: ctx.db, response });
     let runId: string | null = null;
-    try {
-      runId = (await appendResearchRun(ctx.wikiPath, { question: body.question, model, response })).id;
-    } catch {
-      // History is a convenience; never fail an answered question because it could not be saved.
+    // Demo: visitors share one wiki, so their questions are never written to it.
+    if (!demo) {
+      try {
+        runId = (await appendResearchRun(ctx.wikiPath, { question: body.question, model, response })).id;
+      } catch {
+        // History is a convenience; never fail an answered question because it could not be saved.
+      }
     }
     return NextResponse.json({ ok: true, model, response, evidence, runId });
   } catch (err) {

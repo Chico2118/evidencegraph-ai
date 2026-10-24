@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 
 import { QueryView } from "./query-view";
+import { isDemoMode } from "@/lib/demo-policy";
 import { requireSetup } from "@/lib/server-wiki";
 
 export const dynamic = "force-dynamic";
@@ -15,7 +16,7 @@ export default async function QueryPage() {
   await requireSetup("query");
   return (
     <Suspense fallback={null}>
-      <QueryView />
+      <QueryView demo={isDemoMode()} />
     </Suspense>
   );
 }

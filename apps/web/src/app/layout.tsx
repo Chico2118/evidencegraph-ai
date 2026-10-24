@@ -51,6 +51,10 @@ export const metadata: Metadata = {
   },
 };
 
+// The shell reads server state on every request (active wiki, and whether this is the read-only public demo),
+// so no page may be frozen at build time: a statically built page would bake in the build machine's settings.
+export const dynamic = "force-dynamic";
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html

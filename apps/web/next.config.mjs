@@ -7,6 +7,23 @@ const __dirname = dirname(__filename);
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // Do not advertise the framework in a response header.
+  poweredByHeader: false,
+  // Cheap, safe browser protections for every response. (No Content-Security-Policy yet: Next's inline
+  // bootstrap scripts need a per-request nonce, and a wrong policy would blank the app.)
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "DENY" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+        ],
+      },
+    ];
+  },
   // "standalone" produces a self-contained server bundle in .next/standalone/.
   // The CLI's `start` command prefers that bundle for production installs and
   // falls back to `next dev` from the workspace when it isn't present.

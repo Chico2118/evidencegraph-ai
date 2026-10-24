@@ -42,6 +42,8 @@ EvidenceGraph AI is not affiliated with, endorsed by, or maintained by the upstr
 | `packages/eval/` | Evaluation lab: development and hash-pinned held-out synthetic fixtures, metrics, deterministic runner, live-model runner, mock model and server, demo seeding, failure-mode tests |
 | `.github/workflows/ci.yml`, `.gitattributes` | CI (typecheck, lint, test, evaluation check, build; no secrets) and LF line endings so hash-pinned files stay valid on Windows |
 | `packages/ingestion/src/limits.ts` | Upload/pasted-text/URL size limits and extension allowlist |
+| `apps/web/src/lib/demo-policy.ts`, `apps/web/src/middleware.ts`, `apps/web/src/lib/demo-client.ts`, `apps/web/src/app/api/health`, `apps/web/scripts/start-demo.mjs` | Read-only public demo mode: allow-list middleware, rate limits, in-process mock model, health check, start script |
+| `packages/eval/src/demo-guard.ts` | `pnpm demo` refuses to delete a folder that is not clearly a demo wiki |
 | `packages/ingestion/src/url-guard.ts` | Blocks private/local addresses for URL ingestion and re-checks redirects (opt-out `EVIDENCEGRAPH_ALLOW_PRIVATE_URLS`) |
 | `packages/core/src/secrets.ts` (modified) | Optional `EVIDENCEGRAPH_OPENROUTER_API_KEY`: the key is read from the environment and never stored |
 | `apps/web/src/components/research/`, `app/contradictions/`, `app/evaluation/`, `app/api/research/`, `app/api/contradictions/` | Research workspace pieces, contradiction explorer, evaluation lab page, APIs |

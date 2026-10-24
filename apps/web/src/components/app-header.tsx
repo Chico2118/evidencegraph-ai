@@ -30,7 +30,9 @@ const MORE_NAV = [
 
 const SETTINGS_NAV = { label: "Settings", href: "/settings" } as const;
 
-export function AppHeader() {
+// `demo`: the read-only public demo has no workspaces to switch between, and the switcher's request to
+// /api/wikis is (deliberately) refused there, so it is not rendered at all.
+export function AppHeader({ demo = false }: { demo?: boolean }) {
   const pathname = usePathname();
   const moreMenu = useRef<HTMLDetailsElement>(null);
   const compactMenu = useRef<HTMLDetailsElement>(null);
@@ -59,9 +61,11 @@ export function AppHeader() {
           It used to switch on at `lg` (1024px) and overflowed the viewport, pushing Settings and the
           theme toggle off-screen. 1160px is the first width where it fits; below it the ≡ menu is used.
           Keep the four `min-[1160px]` classes in this file in sync (see app-header.test.ts). */}
-      <div className="hidden min-[1160px]:block">
-        <WikiSwitcher />
-      </div>
+      {demo ? null : (
+        <div className="hidden min-[1160px]:block">
+          <WikiSwitcher />
+        </div>
+      )}
 
       <nav aria-label="Primary" className="hidden items-center gap-5 text-ui min-[1160px]:flex">
         {PRIMARY_NAV.map((item) => (
