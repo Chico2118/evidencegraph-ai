@@ -64,6 +64,6 @@ Run live mode across a few models and record results; collect a larger human-lab
 - That support/accuracy of answers is measured — it isn't; live-model results do not exist yet.
 - That the benchmark proves general accuracy — it's synthetic and tiny.
 - That the project is deployed, published, or used by anyone.
-- That CI is green: the workflow has never run on GitHub.
+- That CI proves more than it does: it passed on commit `ee61c9c` (typecheck, lint, tests and evaluation checks on Node 20 and 22, plus the production build), but it does not drive the UI in a browser or call any model.
 - That a real model's behavior has been measured: live mode has not been run with a real model.
 - That you wrote the ingestion pipeline, wiki engine, graph or chats.

@@ -193,7 +193,7 @@ Details and remaining risks: [`SECURITY.md`](SECURITY.md).
 - Passage ids are positional and can shift when a page is edited (citations carrying a quote are re-verified, so drift shows as a mismatch).
 - URL ingestion refuses private and local addresses (set `EVIDENCEGRAPH_ALLOW_PRIVATE_URLS=1` to ingest from your own network). It cannot stop DNS rebinding, and the app still has no login, so do not expose it to a network.
 - Tested on Windows 11 with Node 22 LTS. Not tested on macOS/Linux in this phase; the upstream project reports it works there.
-- A CI workflow exists (`.github/workflows/ci.yml`) and starts running with the first push to GitHub. Its steps were simulated locally from a clean install in a renamed folder; this README does **not** claim it passes, so check the repository's Actions tab for the actual result. No Docker image; not published to npm.
+- CI (`.github/workflows/ci.yml`) passed on commit `ee61c9c`: typecheck, lint, the full test suite and the development and held-out evaluation checks on Node 20 and Node 22, plus the production build, all on a clean Linux runner ([run](https://github.com/Chico2118/evidencegraph-ai/actions/runs/40132136448)). That is all it covers: it does not drive the UI in a browser or call any model, and later commits are only as green as their own runs. No Docker image; not published to npm.
 
 ## Roadmap
 
