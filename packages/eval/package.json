@@ -1,0 +1,30 @@
+{
+  "name": "@evidencegraph/eval",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Reproducible evaluation lab: labeled fixtures, metrics, deterministic runner, optional live-model mode.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "echo 'lint: no-op for now'",
+    "build": "echo 'build: no-op for now'",
+    "eval": "tsx src/cli.ts",
+    "demo": "tsx src/demo.ts"
+  },
+  "dependencies": {
+    "@evidencegraph/core": "workspace:*",
+    "@evidencegraph/llm": "workspace:*",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.41",
+    "vitest": "^2.1.9"
+  }
+}

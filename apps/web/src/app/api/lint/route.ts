@@ -1,0 +1,59 @@
+import { NextResponse } from "next/server";
+
+import { getApiKey, lintWiki } from "@evidencegraph/core";
+import { createClient, ContextLengthError, RateLimitError, UnknownModelError } from "@evidencegraph/llm";
+
+import { openWikiContext } from "@/lib/server-wiki";
+
+export const dynamic = "force-dynamic";
+export const maxDuration = 180;
+
+type Body = { model?: string };
+
+export async function POST(req: Request) {
+  let body: Body = {};
+  try {
+    body = (await req.json()) as Body;
+  } catch {
+    body = {};
+  }
+
+  const { key } = await getApiKey();
+  const ctx = await openWikiContext();
+  const provider = ctx.settings.defaultModels.lint.provider;
+  if (provider === "openrouter" && !key) {
+    return NextResponse.json(
+      { error: "OpenRouter API key not configured. Set one in Settings." },
+      { status: 400 },
+    );
+  }
+  const client = createClient(key || "", provider);
+  const model = body.model ?? ctx.settings.defaultModels.lint.model;
+
+  try {
+    const result = await lintWiki({
+      wikiPath: ctx.wikiPath,
+      db: ctx.db,
+      client,
+      model,
+    });
+    return NextResponse.json({ ok: true, model, result });
+  } catch (err) {
+    const status =
+      err instanceof ContextLengthError || err instanceof UnknownModelError
+        ? 400
+        : err instanceof RateLimitError
+          ? 429
+          : 500;
+    return NextResponse.json(
+      {
+        ok: false,
+        error: (err as Error).message ?? "lint failed",
+        type: (err as Error).name ?? "Error",
+      },
+      { status },
+    );
+  } finally {
+    ctx.db.close();
+  }
+}

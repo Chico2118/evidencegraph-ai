@@ -1,0 +1,63 @@
+{
+  "name": "@evidencegraph/web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "EvidenceGraph AI web app — Next.js UI + API routes.",
+  "license": "MIT",
+  "bin": {
+    "evidencegraph": "./bin/evidencegraph.mjs"
+  },
+  "files": [
+    "bin",
+    ".next/standalone",
+    ".next/static",
+    "public"
+  ],
+  "scripts": {
+    "dev": "node ./scripts/clean-standalone.mjs && next dev",
+    "build": "node ./scripts/clean-standalone.mjs && next build && node ./scripts/copy-standalone-assets.mjs",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "cli": "node ./bin/evidencegraph.mjs",
+    "build:publish": "pnpm build && node ./scripts/build-publish-tarball.mjs",
+    "pack:publish": "pnpm build:publish && cd dist-publish && npm pack"
+  },
+  "dependencies": {
+    "@evidencegraph/core": "workspace:*",
+    "@evidencegraph/eval": "workspace:*",
+    "@evidencegraph/ingestion": "workspace:*",
+    "@evidencegraph/llm": "workspace:*",
+    "@radix-ui/react-slot": "^1.1.0",
+    "archiver": "^8.0.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "diff": "^9.0.0",
+    "lucide-react": "^0.439.0",
+    "next": "^14.2.15",
+    "open": "^10.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-force-graph-3d": "^1.29.1",
+    "react-markdown": "^9.1.0",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/archiver": "^7.0.0",
+    "@types/diff": "^8.0.0",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.15",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.5.4"
+  },
+  "author": "Shivam Jani <shivam21jani@gmail.com> (https://github.com/Chico2118)"
+}

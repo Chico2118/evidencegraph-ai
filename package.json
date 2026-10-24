@@ -1,0 +1,46 @@
+{
+  "name": "evidencegraph-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "EvidenceGraph AI — Research You Can Verify. Evidence-first AI research workspace (monorepo root).",
+  "license": "MIT",
+  "author": "Shivam Jani <shivam21jani@gmail.com> (https://github.com/Chico2118)",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "scripts": {
+    "dev": "pnpm --filter @evidencegraph/web dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "pnpm -r typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,css}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,css}\"",
+    "eval": "pnpm --filter @evidencegraph/eval eval --",
+    "eval:check": "pnpm --filter @evidencegraph/eval eval -- --check && pnpm --filter @evidencegraph/eval eval -- --check --heldout",
+    "demo": "pnpm --filter @evidencegraph/eval demo --"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "keytar"
+    ]
+  },
+  "contributors": [
+    "Yasas (https://github.com/ddsyasas) — author of the upstream LLM Wiki project this work is derived from (MIT)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chico2118/evidencegraph-ai.git"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "note": "Passage pairs a careful reviewer would flag for review. Conflicts that turn out to be a difference of scope or date once reviewed are still gold: they should be surfaced. Labels were written before the detector was run.",
+  "gold": [
+    {
+      "a": "cell-aging#p1",
+      "b": "aging-older-notes#p1",
+      "why": "45 vs 60 degrees (older notes)"
+    },
+    {
+      "a": "cell-aging#p3",
+      "b": "aging-older-notes#p2",
+      "why": "88% vs 94% after 500 cycles (older notes)"
+    },
+    {
+      "a": "solid-state-batteries#p2",
+      "b": "energy-density-trends#p2",
+      "why": "400 Wh/kg reached vs not expected to exceed 300"
+    },
+    {
+      "a": "fast-charging#p2",
+      "b": "charging-guidelines#p1",
+      "why": "plating threshold 10 vs 0 degrees"
+    },
+    {
+      "a": "cathode-chemistries#p2",
+      "b": "lfp-field-data#p1",
+      "why": "90% vs 80% after 3000 cycles (lab vs fleet scope)"
+    }
+  ],
+  "knownNonConflicts": [
+    {
+      "a": "battery-recycling#p3",
+      "b": "recycling-policy#p1",
+      "why": "current collection rate vs a future target"
+    },
+    {
+      "a": "thermal-management#p1",
+      "b": "pack-design#p1",
+      "why": "consistent statements"
+    },
+    {
+      "a": "thermal-management#p1",
+      "b": "thermal-management#p2",
+      "why": "liquid vs air cooling: different subjects"
+    }
+  ]
+}

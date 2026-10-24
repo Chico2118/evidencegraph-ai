@@ -1,0 +1,558 @@
+{
+  "note": "Hand-written responses in the shape a model returns, each with hand-assigned labels. They exercise failure modes the validator is designed for; they say nothing about how often real models produce them.",
+  "cases": [
+    {
+      "id": "cc01-all-valid",
+      "description": "Two claims, exact passages and exact quotes.",
+      "claims": [
+        {
+          "text": "Capacity fade accelerates above 45 C in the tested NMC cells.",
+          "citations": [
+            {
+              "page": "cell-aging",
+              "passage": "p1",
+              "quote": "Capacity fade accelerates above 45 degrees Celsius"
+            }
+          ]
+        },
+        {
+          "text": "NMC cells retained 88% after 500 cycles.",
+          "citations": [
+            {
+              "page": "cell-aging",
+              "passage": "p3",
+              "quote": "retained 88% of their initial capacity"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "valid"
+        },
+        {
+          "claim": 1,
+          "citation": 0,
+          "expected": "valid"
+        }
+      ],
+      "claimStates": [
+        "all_citations_valid",
+        "all_citations_valid"
+      ],
+      "verdict": "all_claims_verified"
+    },
+    {
+      "id": "cc02-fabricated-quote",
+      "description": "Real passage, invented quotation.",
+      "claims": [
+        {
+          "text": "Fade stops above 80 C.",
+          "citations": [
+            {
+              "page": "cell-aging",
+              "passage": "p1",
+              "quote": "fade stops entirely above 80 degrees"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "invalid"
+        }
+      ],
+      "claimStates": [
+        "no_valid_citations"
+      ],
+      "verdict": "no_valid_evidence"
+    },
+    {
+      "id": "cc03-quote-in-other-passage",
+      "description": "Quote is real but belongs to a different passage than cited.",
+      "claims": [
+        {
+          "text": "NMC cells retained 88% after 500 cycles.",
+          "citations": [
+            {
+              "page": "cell-aging",
+              "passage": "p2",
+              "quote": "retained 88% of their initial capacity"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "invalid"
+        }
+      ],
+      "claimStates": [
+        "no_valid_citations"
+      ],
+      "verdict": "no_valid_evidence"
+    },
+    {
+      "id": "cc04-wrong-passage-no-quote",
+      "description": "KNOWN BLIND SPOT: wrong passage cited with no quote. The citation resolves, so integrity is valid; only a semantic check could catch it.",
+      "claims": [
+        {
+          "text": "NMC cells retained 88% after 500 cycles.",
+          "citations": [
+            {
+              "page": "cell-aging",
+              "passage": "p2"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "valid",
+          "semantic": "unsupported"
+        }
+      ],
+      "claimStates": [
+        "all_citations_valid"
+      ],
+      "verdict": "all_claims_verified"
+    },
+    {
+      "id": "cc05-hallucinated-page",
+      "description": "Cites a page that never existed.",
+      "claims": [
+        {
+          "text": "Cells last 20 years.",
+          "citations": [
+            {
+              "page": "battery-lifetime-model",
+              "passage": "p1"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "unavailable"
+        }
+      ],
+      "claimStates": [
+        "no_valid_citations"
+      ],
+      "verdict": "no_valid_evidence"
+    },
+    {
+      "id": "cc06-deleted-page",
+      "description": "Page existed when answered, deleted since (removed from the corpus for this case).",
+      "removePages": [
+        "recycling-policy"
+      ],
+      "claims": [
+        {
+          "text": "70% collection is required by 2030.",
+          "citations": [
+            {
+              "page": "recycling-policy",
+              "passage": "p1",
+              "quote": "70% of spent cells to be collected by 2030"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "unavailable"
+        }
+      ],
+      "claimStates": [
+        "no_valid_citations"
+      ],
+      "verdict": "no_valid_evidence"
+    },
+    {
+      "id": "cc07-unreadable-page",
+      "description": "Page file exists but cannot be parsed.",
+      "unreadablePages": [
+        "battery-safety"
+      ],
+      "claims": [
+        {
+          "text": "Venting gas is toxic.",
+          "citations": [
+            {
+              "page": "battery-safety",
+              "passage": "p2"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "unavailable"
+        }
+      ],
+      "claimStates": [
+        "no_valid_citations"
+      ],
+      "verdict": "no_valid_evidence"
+    },
+    {
+      "id": "cc08-nonexistent-passage",
+      "description": "Valid page, passage number beyond the end.",
+      "claims": [
+        {
+          "text": "Aging is slow.",
+          "citations": [
+            {
+              "page": "cell-aging",
+              "passage": "p9"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "invalid"
+        }
+      ],
+      "claimStates": [
+        "no_valid_citations"
+      ],
+      "verdict": "no_valid_evidence"
+    },
+    {
+      "id": "cc09-page-level-only",
+      "description": "Cites a page with no passage or quote.",
+      "claims": [
+        {
+          "text": "Fast charging heats the cell.",
+          "citations": [
+            {
+              "page": "fast-charging"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "valid"
+        }
+      ],
+      "claimStates": [
+        "all_citations_valid"
+      ],
+      "verdict": "all_claims_verified"
+    },
+    {
+      "id": "cc10-passage-from-quote",
+      "description": "No passage id, but the quote locates it.",
+      "claims": [
+        {
+          "text": "Pulse charging helps.",
+          "citations": [
+            {
+              "page": "fast-charging",
+              "quote": "Pulse charging reduced plating signs in 70% of trials"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "valid"
+        }
+      ],
+      "claimStates": [
+        "all_citations_valid"
+      ],
+      "verdict": "all_claims_verified"
+    },
+    {
+      "id": "cc11-malformed-citations",
+      "description": "Citation entries that are not citation objects.",
+      "claims": [
+        {
+          "text": "Something.",
+          "citations": [
+            42,
+            null,
+            {
+              "passage": "p1"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "invalid"
+        },
+        {
+          "claim": 0,
+          "citation": 1,
+          "expected": "invalid"
+        },
+        {
+          "claim": 0,
+          "citation": 2,
+          "expected": "invalid"
+        }
+      ],
+      "claimStates": [
+        "no_valid_citations"
+      ],
+      "verdict": "no_valid_evidence"
+    },
+    {
+      "id": "cc12-path-traversal",
+      "description": "Slugs that try to escape the wiki folder.",
+      "claims": [
+        {
+          "text": "Secrets.",
+          "citations": [
+            {
+              "page": "../../etc/passwd",
+              "passage": "p1"
+            },
+            {
+              "page": "..\\windows\\system32",
+              "passage": "p1"
+            },
+            {
+              "page": "cell-aging/../../x"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "invalid"
+        },
+        {
+          "claim": 0,
+          "citation": 1,
+          "expected": "invalid"
+        },
+        {
+          "claim": 0,
+          "citation": 2,
+          "expected": "invalid"
+        }
+      ],
+      "claimStates": [
+        "no_valid_citations"
+      ],
+      "verdict": "no_valid_evidence"
+    },
+    {
+      "id": "cc13-duplicate-citation",
+      "description": "Same citation repeated on one claim.",
+      "claims": [
+        {
+          "text": "Fade accelerates above 45 C.",
+          "citations": [
+            {
+              "page": "cell-aging",
+              "passage": "p1"
+            },
+            {
+              "page": "cell-aging",
+              "passage": "p1"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "valid"
+        },
+        {
+          "claim": 0,
+          "citation": 1,
+          "expected": "valid",
+          "duplicate": true
+        }
+      ],
+      "claimStates": [
+        "all_citations_valid"
+      ],
+      "verdict": "all_claims_verified"
+    },
+    {
+      "id": "cc14-uncited-claim",
+      "description": "A claim with no citations at all, next to a valid one.",
+      "claims": [
+        {
+          "text": "Pulse charging helps.",
+          "citations": [
+            {
+              "page": "fast-charging",
+              "passage": "p3"
+            }
+          ]
+        },
+        {
+          "text": "Pulse charging is used in every EV.",
+          "citations": []
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "valid"
+        }
+      ],
+      "claimStates": [
+        "all_citations_valid",
+        "no_evidence"
+      ],
+      "verdict": "some_claims_unverified"
+    },
+    {
+      "id": "cc15-abstention",
+      "description": "Honest answer that the wiki does not cover the question: no claims.",
+      "claims": [],
+      "labels": [],
+      "claimStates": [],
+      "verdict": "no_claims"
+    },
+    {
+      "id": "cc16-quote-ellipsis",
+      "description": "Abbreviated quotation with an ellipsis gap.",
+      "claims": [
+        {
+          "text": "Gas is flammable and toxic.",
+          "citations": [
+            {
+              "page": "battery-safety",
+              "passage": "p2",
+              "quote": "Venting gas ... is flammable and toxic"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "valid"
+        }
+      ],
+      "claimStates": [
+        "all_citations_valid"
+      ],
+      "verdict": "all_claims_verified"
+    },
+    {
+      "id": "cc17-quote-formatting",
+      "description": "Quote differs from the page only by case and punctuation.",
+      "claims": [
+        {
+          "text": "Cobalt drives cost.",
+          "citations": [
+            {
+              "page": "cathode-chemistries",
+              "passage": "p3",
+              "quote": "COBALT CONTENT in NMC cathodes — drives cost and supply risk"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "valid"
+        }
+      ],
+      "claimStates": [
+        "all_citations_valid"
+      ],
+      "verdict": "all_claims_verified"
+    },
+    {
+      "id": "cc18-mixed",
+      "description": "Realistic mix: one good citation, one fabricated quote, one ghost page.",
+      "claims": [
+        {
+          "text": "Liquid cooling keeps differences under 3 C.",
+          "citations": [
+            {
+              "page": "thermal-management",
+              "passage": "p1",
+              "quote": "under 3 degrees Celsius across cells"
+            }
+          ]
+        },
+        {
+          "text": "Air cooling is always sufficient.",
+          "citations": [
+            {
+              "page": "thermal-management",
+              "passage": "p2",
+              "quote": "air cooling is always sufficient"
+            }
+          ]
+        },
+        {
+          "text": "Phase change is obsolete.",
+          "citations": [
+            {
+              "page": "cooling-obsolescence",
+              "passage": "p1"
+            }
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "claim": 0,
+          "citation": 0,
+          "expected": "valid"
+        },
+        {
+          "claim": 1,
+          "citation": 0,
+          "expected": "invalid"
+        },
+        {
+          "claim": 2,
+          "citation": 0,
+          "expected": "unavailable"
+        }
+      ],
+      "claimStates": [
+        "all_citations_valid",
+        "no_valid_citations",
+        "no_valid_citations"
+      ],
+      "verdict": "some_claims_unverified"
+    }
+  ]
+}

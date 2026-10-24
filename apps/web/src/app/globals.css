@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  EvidenceGraph AI design tokens.
+
+  One brand hue (indigo) on cool slate neutrals. Status colors (ok / warn /
+  bad) are reserved for evidence state — citation integrity, support,
+  contradictions — so the brand color never competes with a verdict.
+  Contrast of the text/background pairs used by the UI was computed in both themes; the lowest is 5.9:1 (WCAG AA needs 4.5:1).
+
+  Light:  bg #f8fafc · text #0f172a · muted-fg #475569 · primary #4338ca
+  Dark:   bg #0b1020 · text #f1f5f9 · muted-fg #a7b4c7 · primary #818cf8
+*/
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;          /* #f8fafc */
+    --foreground: 222 47% 11%;          /* #0f172a */
+
+    --elevated: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --secondary: 214 32% 94%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 214 32% 94%;
+    --muted-foreground: 215 19% 35%;    /* #475569 */
+
+    --primary: 243 57% 50%;             /* #4338ca */
+    --primary-foreground: 0 0% 100%;
+    --accent: 214 32% 91%;
+    --accent-foreground: 222 47% 11%;
+    --accent-soft: 226 100% 94%;        /* #e0e7ff */
+    --destructive: 0 72% 42%;
+    --destructive-foreground: 0 0% 100%;
+
+    --ok: 162 94% 20%;                  /* emerald-800-ish */
+    --ok-soft: 152 76% 94%;
+    --warn: 26 90% 29%;                 /* amber-800-ish */
+    --warn-soft: 48 96% 89%;
+    --bad: 0 72% 38%;
+    --bad-soft: 0 86% 95%;
+
+    --border: 214 25% 84%;
+    --input: 214 25% 80%;
+    --ring: 243 57% 50%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 226 47% 9%;           /* #0b1020 */
+    --foreground: 210 40% 96%;
+
+    --elevated: 223 30% 16%;
+    --card: 223 35% 12%;
+    --card-foreground: 210 40% 96%;
+    --popover: 223 35% 12%;
+    --popover-foreground: 210 40% 96%;
+
+    --secondary: 223 28% 15%;
+    --secondary-foreground: 210 40% 96%;
+    --muted: 223 28% 15%;
+    --muted-foreground: 215 20% 70%;
+
+    --primary: 234 89% 74%;             /* #818cf8 */
+    --primary-foreground: 226 47% 9%;
+    --accent: 223 28% 19%;
+    --accent-foreground: 210 40% 96%;
+    --accent-soft: 233 45% 22%;
+    --destructive: 0 84% 68%;
+    --destructive-foreground: 226 47% 9%;
+
+    --ok: 152 69% 72%;
+    --ok-soft: 160 60% 14%;
+    --warn: 43 96% 72%;
+    --warn-soft: 35 70% 15%;
+    --bad: 0 90% 78%;
+    --bad-soft: 0 55% 18%;
+
+    --border: 223 25% 24%;
+    --input: 223 25% 28%;
+    --ring: 234 89% 74%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1, "cv11" 1;
+  }
+  /* Headings use the display serif; UI chrome stays in the sans face. */
+  h1, h2, h3 {
+    @apply font-display tracking-tight;
+  }
+  /* Long-form markdown (wiki bodies, chat assistant replies) uses the
+     reading serif via the prose container, which we apply via MarkdownView. */
+  code, kbd, pre, samp {
+    @apply font-mono;
+  }
+}
+
+/* shadcn prose tweaks so wiki body uses the serif and proper rhythm. */
+.prose {
+  @apply font-serif;
+}
+.prose code {
+  @apply font-mono;
+}
+
+/* Active nav indicator — a thin brand-colored underline below the active link. */
+.nav-link {
+  @apply relative whitespace-nowrap px-1 py-1 text-sm text-muted-foreground transition-colors hover:text-foreground;
+}
+.nav-link.is-active {
+  @apply text-foreground;
+}
+.nav-link.is-active::after {
+  content: "";
+  @apply absolute left-0 right-0 -bottom-[5px] h-px bg-primary;
+}
+
+/* Keyboard users get a visible ring on every interactive element, including
+   the <summary> toggles used for menus. */
+:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Honour the OS "reduce motion" setting for the few transitions we use. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Passage highlight applied by the evidence inspector's "open in page" jump. */
+.eg-passage-highlight {
+  background: hsl(var(--accent-soft));
+  box-shadow: 0 0 0 4px hsl(var(--accent-soft));
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}

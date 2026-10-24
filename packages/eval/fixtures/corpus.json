@@ -1,0 +1,187 @@
+{
+  "note": "SYNTHETIC fixture. Invented battery-research notes written for testing; none of these statements are real findings and the numbers must not be cited.",
+  "pages": [
+    {
+      "slug": "cell-aging",
+      "title": "Cell aging",
+      "type": "concept",
+      "updated": "2026-03-10",
+      "sources": [
+        {
+          "id": "src-aging-study",
+          "title": "NMC aging study (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "## Temperature\n\nCapacity fade accelerates above 45 degrees Celsius in the tested NMC cells.\n\n## Calendar aging\n\nCalendar aging is slower than cycle aging: cells stored at 25 degrees Celsius lost 4% of capacity over 12 months.\n\n## Cycle aging\n\nAfter 500 charge cycles at 1C, the NMC cells retained 88% of their initial capacity."
+    },
+    {
+      "slug": "aging-older-notes",
+      "title": "Aging notes (2024)",
+      "type": "concept",
+      "updated": "2024-02-14",
+      "sources": [
+        {
+          "id": "src-aging-2024",
+          "title": "Early aging notes 2024 (synthetic)",
+          "format": "md"
+        }
+      ],
+      "content": "Capacity fade accelerates above 60 degrees Celsius in the tested NMC cells.\n\nAfter 500 charge cycles at 1C, the NMC cells retained 94% of their initial capacity."
+    },
+    {
+      "slug": "fast-charging",
+      "title": "Fast charging",
+      "type": "concept",
+      "updated": "2026-02-01",
+      "sources": [
+        {
+          "id": "src-charging-report",
+          "title": "Fast charging report (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Charging at 3C raises the cell temperature by about 12 degrees Celsius above ambient.\n\nLithium plating risk rises sharply below 10 degrees Celsius during fast charging.\n\nPulse charging reduced plating signs in 70% of trials in the pilot study."
+    },
+    {
+      "slug": "charging-guidelines",
+      "title": "Charging guidelines",
+      "type": "concept",
+      "updated": "2026-01-10",
+      "sources": [
+        {
+          "id": "src-charging-report",
+          "title": "Fast charging report (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Lithium plating risk rises sharply below 0 degrees Celsius during fast charging.\n\nChargers should taper current as the cell approaches full charge."
+    },
+    {
+      "slug": "thermal-management",
+      "title": "Thermal management",
+      "type": "concept",
+      "updated": "2025-11-20",
+      "sources": [
+        {
+          "id": "src-thermal-handbook",
+          "title": "Thermal handbook (synthetic)",
+          "format": "docx"
+        }
+      ],
+      "content": "Liquid cooling keeps pack temperature differences under 3 degrees Celsius across cells.\n\nAir cooling is cheaper but allows temperature differences up to 10 degrees Celsius across cells.\n\nPhase-change materials absorb heat during short peaks but do not remove it over long periods."
+    },
+    {
+      "slug": "pack-design",
+      "title": "Pack design",
+      "type": "concept",
+      "updated": "2025-12-12",
+      "sources": [
+        {
+          "id": "src-pack-notes",
+          "title": "Reference pack notes (synthetic)",
+          "format": "md"
+        }
+      ],
+      "content": "Liquid cooling keeps pack temperature differences under 3 degrees Celsius across cells in the reference pack.\n\nBusbars are sized for the peak discharge current."
+    },
+    {
+      "slug": "cathode-chemistries",
+      "title": "Cathode chemistries",
+      "type": "comparison",
+      "updated": "2026-01-15",
+      "sources": [
+        {
+          "id": "src-chem-review",
+          "title": "Cathode review (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "NMC cathodes offer higher energy density than LFP cathodes.\n\nLFP cathodes tolerate more charge cycles; LFP cells retain 90% of capacity after 3000 cycles in laboratory tests.\n\nCobalt content in NMC cathodes drives cost and supply risk."
+    },
+    {
+      "slug": "lfp-field-data",
+      "title": "LFP field data",
+      "type": "concept",
+      "updated": "2026-03-28",
+      "sources": [
+        {
+          "id": "src-fleet-data",
+          "title": "Fleet telemetry summary (synthetic)",
+          "format": "xlsx"
+        }
+      ],
+      "content": "LFP cells retain 80% of capacity after 3000 cycles in fleet operation.\n\nFleet duty cycles include frequent fast charging."
+    },
+    {
+      "slug": "battery-recycling",
+      "title": "Battery recycling",
+      "type": "concept",
+      "updated": "2025-09-05",
+      "sources": [
+        {
+          "id": "src-recycling-brief",
+          "title": "Recycling brief (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Hydrometallurgical recycling recovers over 95% of cobalt and nickel from spent cells.\n\nDirect recycling preserves the cathode structure but needs sorted, single-chemistry input.\n\nCollection rates remain the main bottleneck, with under 50% of spent cells reaching recyclers."
+    },
+    {
+      "slug": "recycling-policy",
+      "title": "Recycling policy",
+      "type": "concept",
+      "updated": "2025-12-01",
+      "sources": [
+        {
+          "id": "src-policy",
+          "title": "Policy summary (synthetic)",
+          "format": "html"
+        }
+      ],
+      "content": "Policy targets require 70% of spent cells to be collected by 2030.\n\nProducers share responsibility for end-of-life handling."
+    },
+    {
+      "slug": "solid-state-batteries",
+      "title": "Solid-state batteries",
+      "type": "concept",
+      "updated": "2026-04-02",
+      "sources": [
+        {
+          "id": "src-ssb-outlook",
+          "title": "Solid-state outlook (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Solid-state cells replace the liquid electrolyte with a solid ceramic or polymer layer.\n\nPrototype solid-state cells reached 400 Wh/kg in laboratory tests.\n\nManufacturing at scale is not expected before 2030 according to the outlook."
+    },
+    {
+      "slug": "energy-density-trends",
+      "title": "Energy density trends (2024)",
+      "type": "overview",
+      "updated": "2024-06-30",
+      "sources": [
+        {
+          "id": "src-market-2024",
+          "title": "Market snapshot 2024 (synthetic)",
+          "format": "html"
+        }
+      ],
+      "content": "Commercial lithium-ion cells reach about 250 Wh/kg in 2024.\n\nSolid-state cells are not expected to exceed 300 Wh/kg in laboratory tests."
+    },
+    {
+      "slug": "battery-safety",
+      "title": "Battery safety",
+      "type": "concept",
+      "updated": "2026-02-20",
+      "sources": [
+        {
+          "id": "src-safety-guide",
+          "title": "Safety guide (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Thermal runaway typically begins above 150 degrees Celsius inside the cell.\n\nVenting gas from a failing cell is flammable and toxic.\n\nSeparators with ceramic coating delay internal short circuits."
+    }
+  ]
+}

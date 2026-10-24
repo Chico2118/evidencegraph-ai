@@ -1,0 +1,269 @@
+{
+  "note": "Gold = the passages a careful reader would cite. Written by hand before any retriever was run. u* questions are not answerable from the corpus.",
+  "questions": [
+    {
+      "id": "q01",
+      "question": "At what temperature does capacity fade start to accelerate in NMC cells?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "cell-aging",
+          "passages": [
+            "p1"
+          ]
+        }
+      ],
+      "keywordQuery": "NMC capacity fade temperature"
+    },
+    {
+      "id": "q02",
+      "question": "How much capacity do NMC cells keep after 500 cycles?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "cell-aging",
+          "passages": [
+            "p3"
+          ]
+        }
+      ],
+      "keywordQuery": "NMC capacity 500 cycles"
+    },
+    {
+      "id": "q03",
+      "question": "How much does fast charging at 3C heat the cell?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "fast-charging",
+          "passages": [
+            "p1"
+          ]
+        }
+      ],
+      "keywordQuery": "fast charging 3C cell temperature"
+    },
+    {
+      "id": "q04",
+      "question": "Why is lithium plating a concern when charging in the cold?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "fast-charging",
+          "passages": [
+            "p2"
+          ]
+        },
+        {
+          "page": "charging-guidelines",
+          "passages": [
+            "p1"
+          ]
+        }
+      ],
+      "keywordQuery": "lithium plating cold charging"
+    },
+    {
+      "id": "q05",
+      "question": "Which cathode has higher energy density, NMC or LFP?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "cathode-chemistries",
+          "passages": [
+            "p1"
+          ]
+        }
+      ],
+      "keywordQuery": "NMC LFP energy density"
+    },
+    {
+      "id": "q06",
+      "question": "How many cycles can LFP cells last?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "cathode-chemistries",
+          "passages": [
+            "p2"
+          ]
+        },
+        {
+          "page": "lfp-field-data",
+          "passages": [
+            "p1"
+          ]
+        }
+      ],
+      "keywordQuery": "LFP cycles"
+    },
+    {
+      "id": "q07",
+      "question": "What share of cobalt and nickel does hydrometallurgical recycling recover?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "battery-recycling",
+          "passages": [
+            "p1"
+          ]
+        }
+      ],
+      "keywordQuery": "hydrometallurgical recycling cobalt nickel"
+    },
+    {
+      "id": "q08",
+      "question": "What is the main bottleneck in battery recycling?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "battery-recycling",
+          "passages": [
+            "p3"
+          ]
+        }
+      ],
+      "keywordQuery": "recycling bottleneck"
+    },
+    {
+      "id": "q09",
+      "question": "What energy density have solid-state prototypes reached?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "solid-state-batteries",
+          "passages": [
+            "p2"
+          ]
+        },
+        {
+          "page": "energy-density-trends",
+          "passages": [
+            "p2"
+          ]
+        }
+      ],
+      "keywordQuery": "solid-state energy density Wh/kg"
+    },
+    {
+      "id": "q10",
+      "question": "When is large-scale manufacturing of solid-state cells expected?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "solid-state-batteries",
+          "passages": [
+            "p3"
+          ]
+        }
+      ],
+      "keywordQuery": "solid-state manufacturing scale"
+    },
+    {
+      "id": "q11",
+      "question": "What happens when a failing cell vents gas?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "battery-safety",
+          "passages": [
+            "p2"
+          ]
+        }
+      ],
+      "keywordQuery": "venting gas cell"
+    },
+    {
+      "id": "q12",
+      "question": "How do ceramic-coated separators help safety?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "battery-safety",
+          "passages": [
+            "p3"
+          ]
+        }
+      ],
+      "keywordQuery": "ceramic separators safety"
+    },
+    {
+      "id": "q13",
+      "question": "How much temperature variation does liquid cooling allow across a pack?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "thermal-management",
+          "passages": [
+            "p1"
+          ]
+        },
+        {
+          "page": "pack-design",
+          "passages": [
+            "p1"
+          ]
+        }
+      ],
+      "keywordQuery": "liquid cooling temperature differences pack"
+    },
+    {
+      "id": "q14",
+      "question": "What do phase-change materials do?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "thermal-management",
+          "passages": [
+            "p3"
+          ]
+        }
+      ],
+      "keywordQuery": "phase-change materials"
+    },
+    {
+      "id": "q15",
+      "question": "At what temperature does thermal runaway begin?",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "battery-safety",
+          "passages": [
+            "p1"
+          ]
+        }
+      ],
+      "keywordQuery": "thermal runaway temperature"
+    },
+    {
+      "id": "u01",
+      "question": "What is the price per kWh of sodium-ion batteries in 2026?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "u02",
+      "question": "Who founded the first lithium-ion battery company?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "u03",
+      "question": "What is the recommended torque for battery pack bolts?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "u04",
+      "question": "How do flow batteries compare to lithium-ion for grid storage?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "u05",
+      "question": "What is the capital of France?",
+      "answerable": false,
+      "gold": []
+    }
+  ]
+}

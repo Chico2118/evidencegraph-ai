@@ -1,0 +1,62 @@
+{
+  "note": "HELD-OUT. Passage pairs a careful reviewer would want flagged, and pairs that look similar but are not conflicts. Written before the detector was run on this set.",
+  "gold": [
+    {
+      "a": "fare-policy#p1",
+      "b": "fare-policy-2022#p1",
+      "why": "20-35 percent vs about 8 percent (older notes)"
+    },
+    {
+      "a": "electric-buses#p1",
+      "b": "electric-buses-field#p1",
+      "why": "40 vs 22 percent (depot trial vs field service)"
+    },
+    {
+      "a": "accessibility#p1",
+      "b": "accessibility-audit-2020#p1",
+      "why": "54 vs 31 percent (newer vs 2020 audit)"
+    },
+    {
+      "a": "ridership-recovery#p1",
+      "b": "ridership-recovery-regional#p1",
+      "why": "87 vs 92 percent (city vs region)"
+    },
+    {
+      "a": "congestion-pricing-critique#p1",
+      "b": "congestion-pricing-critique#p2",
+      "why": "critics claim traffic is pushed out; monitoring found no increase"
+    },
+    {
+      "a": "transit-oriented-development#p2",
+      "b": "parking-policy#p1",
+      "why": "minimums removed vs not removed"
+    },
+    {
+      "a": "maintenance-costs#p2",
+      "b": "rail-economics#p1",
+      "why": "rail maintenance cheaper vs more expensive than bus"
+    }
+  ],
+  "knownNonConflicts": [
+    {
+      "a": "fare-policy#p2",
+      "b": "fare-policy-2022#p2",
+      "why": "both say about 15 percent: consistent"
+    },
+    {
+      "a": "bus-rapid-transit#p3",
+      "b": "light-rail#p2",
+      "why": "costs of different modes"
+    },
+    {
+      "a": "bus-rapid-transit#p1",
+      "b": "signal-priority#p1",
+      "why": "different measures of bus journey time improvement"
+    },
+    {
+      "a": "light-rail#p1",
+      "b": "bus-rapid-transit#p1",
+      "why": "unrelated figures"
+    }
+  ]
+}

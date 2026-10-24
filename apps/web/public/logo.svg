@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  EvidenceGraph AI — horizontal logo (mark + wordmark).
+  Mirrors the in-app header (apps/web/src/components/app-header.tsx).
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 330 64"
+     width="330" height="64"
+     role="img"
+     aria-label="EvidenceGraph AI">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&amp;display=swap');
+      .word { font: 600 32px Fraunces, Georgia, serif; fill: #0f172a; letter-spacing: -0.02em; }
+      .ai   { font: 600 32px Fraunces, Georgia, serif; fill: #4338ca; letter-spacing: -0.02em; }
+      @media (prefers-color-scheme: dark) {
+        .word { fill: #f1f5f9; }
+        .ai   { fill: #818cf8; }
+      }
+    </style>
+  </defs>
+  <g transform="translate(4,4) scale(0.875)">
+    <rect width="64" height="64" rx="14" fill="#4338ca"/>
+    <path d="M18 44 L32 20 L46 44 Z" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="18" cy="44" r="6" fill="#ffffff"/>
+    <circle cx="46" cy="44" r="6" fill="#ffffff"/>
+    <circle cx="32" cy="20" r="9" fill="#ffffff"/>
+    <path d="M27.8 20.2 l3.2 3.2 l5.4-6.2" fill="none" stroke="#4338ca" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text class="word" x="70" y="43">EvidenceGraph <tspan class="ai">AI</tspan></text>
+</svg>

@@ -1,0 +1,8 @@
+# Keep line endings as LF everywhere. The evaluation fixtures are hash-pinned and the
+# results files are compared byte-for-byte, so a CRLF conversion on a Windows
+# checkout would make `pnpm test` and `pnpm eval:check` fail for no real reason.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary

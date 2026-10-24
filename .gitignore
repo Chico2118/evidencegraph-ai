@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+.next/
+out/
+*.tsbuildinfo
+
+# Test output
+coverage/
+.vitest-cache/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Wiki tooling state (per-wiki .llm-wiki/ folders are gitignored at the wiki root,
+# not here — this repo isn't a wiki)
+
+# Local review/screenshot scratch
+ss/
+
+# Local-only PR review notes — never pushed
+prdocs/
+
+# Maintainer-only release playbook — kept on disk for the maintainer,
+# not shipped to the public repo. Removed from tracking 2026-05-27.
+docs/15-publishing.md
+
+# EvidenceGraph AI: live-model evaluation outputs are local (may reflect paid runs); the
+# deterministic results (latest.*, heldout-latest.*) and the frozen first-run records ARE committed.
+packages/eval/results/live-*

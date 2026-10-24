@@ -1,0 +1,392 @@
+{
+  "note": "HELD-OUT. Gold = the passages a careful reader would cite. Written before any retriever was run on this set. Roughly a third of the questions paraphrase the page wording on purpose. u* questions are not answerable from the corpus (u06 and u08 are adjacent topics).",
+  "questions": [
+    {
+      "id": "a01",
+      "question": "How much faster are trips on bus rapid transit corridors?",
+      "keywordQuery": "bus rapid transit travel times",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "bus-rapid-transit",
+          "passages": [
+            "p1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a02",
+      "question": "How long do vehicles stand at stations with off-board fare payment?",
+      "keywordQuery": "dwell time off-board payment",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "bus-rapid-transit",
+          "passages": [
+            "p2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a03",
+      "question": "What did building a BRT line cost per kilometre?",
+      "keywordQuery": "bus rapid transit capital cost kilometre",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "bus-rapid-transit",
+          "passages": [
+            "p3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a04",
+      "question": "How many passengers can light rail move per hour at peak?",
+      "keywordQuery": "light rail passengers per hour peak",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "light-rail",
+          "passages": [
+            "p1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a05",
+      "question": "How long is a light rail line expected to last?",
+      "keywordQuery": "light rail operate years",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "light-rail",
+          "passages": [
+            "p3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a06",
+      "question": "What happened to ridership when fares were abolished in pilot cities?",
+      "keywordQuery": "fare-free pilots ridership",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "fare-policy",
+          "passages": [
+            "p1"
+          ]
+        },
+        {
+          "page": "fare-policy-2022",
+          "passages": [
+            "p1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a07",
+      "question": "Did removing fares increase the subsidy needed?",
+      "keywordQuery": "fare-free operating subsidies",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "fare-policy",
+          "passages": [
+            "p2"
+          ]
+        },
+        {
+          "page": "fare-policy-2022",
+          "passages": [
+            "p2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a08",
+      "question": "Who are the new riders when transit is free?",
+      "keywordQuery": "new riders walkers cyclists drivers",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "fare-policy",
+          "passages": [
+            "p3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a09",
+      "question": "How much do electric buses save on running costs?",
+      "keywordQuery": "electric buses fuel maintenance spending",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "electric-buses",
+          "passages": [
+            "p1"
+          ]
+        },
+        {
+          "page": "electric-buses-field",
+          "passages": [
+            "p1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a10",
+      "question": "How does cold weather affect electric bus range?",
+      "keywordQuery": "winter range battery heating",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "electric-buses",
+          "passages": [
+            "p2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a11",
+      "question": "Can electric buses be charged overnight at the depot?",
+      "keywordQuery": "overnight depot charging",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "electric-buses",
+          "passages": [
+            "p3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a12",
+      "question": "Do protected bike lanes reduce injuries?",
+      "keywordQuery": "protected bike lanes injuries",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "bike-lanes",
+          "passages": [
+            "p1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a13",
+      "question": "Did lanes that were only painted make cycling safer?",
+      "keywordQuery": "painted lanes injury rates",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "bike-lanes",
+          "passages": [
+            "p2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a14",
+      "question": "What matters more for bike lanes: continuity or width?",
+      "keywordQuery": "lane continuity width",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "bike-lanes",
+          "passages": [
+            "p3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a15",
+      "question": "How much did the cordon charge reduce vehicles entering the centre?",
+      "keywordQuery": "cordon charge vehicle entries",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "congestion-pricing",
+          "passages": [
+            "p1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a16",
+      "question": "What was the revenue from congestion pricing used for?",
+      "keywordQuery": "congestion revenue transit improvements",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "congestion-pricing",
+          "passages": [
+            "p2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a17",
+      "question": "Did traffic move to surrounding streets after the charge?",
+      "keywordQuery": "traffic neighbouring surrounding streets charge",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "congestion-pricing-critique",
+          "passages": [
+            "p1",
+            "p2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a18",
+      "question": "How much more transit use is there near stations?",
+      "keywordQuery": "housing near station transit trips",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "transit-oriented-development",
+          "passages": [
+            "p1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a19",
+      "question": "What share of bus stops are step-free accessible?",
+      "keywordQuery": "bus stops step-free access",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "accessibility",
+          "passages": [
+            "p1"
+          ]
+        },
+        {
+          "page": "accessibility-audit-2020",
+          "passages": [
+            "p1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a20",
+      "question": "How far has weekday ridership recovered compared with 2019?",
+      "keywordQuery": "weekday ridership 2019 level",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "ridership-recovery",
+          "passages": [
+            "p1"
+          ]
+        },
+        {
+          "page": "ridership-recovery-regional",
+          "passages": [
+            "p1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a21",
+      "question": "How much do traffic signal priority systems speed up buses?",
+      "keywordQuery": "signal priority bus journey times",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "signal-priority",
+          "passages": [
+            "p1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a22",
+      "question": "What happens to failure rates when maintenance is put off?",
+      "keywordQuery": "deferred maintenance failure rates",
+      "answerable": true,
+      "gold": [
+        {
+          "page": "maintenance-costs",
+          "passages": [
+            "p3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u01",
+      "question": "What is the average salary of a bus driver?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "u02",
+      "question": "How many people ride the subway in Tokyo?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "u03",
+      "question": "What is the fuel economy of a diesel bus in litres per 100 km?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "u04",
+      "question": "Which company manufactures the most electric buses?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "u05",
+      "question": "When will the new airport terminal open?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "u06",
+      "question": "How does ride-hailing affect transit ridership?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "u07",
+      "question": "What is the speed limit on residential streets?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "u08",
+      "question": "Are hydrogen trains cheaper than electric trains?",
+      "answerable": false,
+      "gold": []
+    }
+  ]
+}

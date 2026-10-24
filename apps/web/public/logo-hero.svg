@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  EvidenceGraph AI — hero logo (stacked). For the README header and social
+  preview image. Original artwork for this project.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 400"
+     width="800" height="400"
+     role="img"
+     aria-label="EvidenceGraph AI — Research You Can Verify">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&amp;display=swap');
+      .bg   { fill: #f8fafc; }
+      .word { font: 600 76px Fraunces, Georgia, serif; fill: #0f172a; letter-spacing: -0.02em; }
+      .ai   { fill: #4338ca; }
+      .tag  { font: 400 26px Fraunces, Georgia, serif; fill: #475569; font-style: italic; }
+      @media (prefers-color-scheme: dark) {
+        .bg   { fill: #0b1020; }
+        .word { fill: #f1f5f9; }
+        .ai   { fill: #818cf8; }
+        .tag  { fill: #94a3b8; }
+      }
+    </style>
+  </defs>
+  <rect class="bg" width="800" height="400"/>
+  <g transform="translate(336,48) scale(2)">
+    <rect width="64" height="64" rx="14" fill="#4338ca"/>
+    <path d="M18 44 L32 20 L46 44 Z" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="18" cy="44" r="6" fill="#ffffff"/>
+    <circle cx="46" cy="44" r="6" fill="#ffffff"/>
+    <circle cx="32" cy="20" r="9" fill="#ffffff"/>
+    <path d="M27.8 20.2 l3.2 3.2 l5.4-6.2" fill="none" stroke="#4338ca" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text class="word" x="400" y="250" text-anchor="middle">EvidenceGraph <tspan class="ai">AI</tspan></text>
+  <text class="tag" x="400" y="310" text-anchor="middle">Research You Can Verify</text>
+</svg>

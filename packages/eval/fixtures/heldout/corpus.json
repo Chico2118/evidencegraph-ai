@@ -1,0 +1,257 @@
+{
+  "note": "SYNTHETIC HELD-OUT fixture (urban transit). Invented for testing; none of these statements are real findings and the numbers must not be cited.",
+  "pages": [
+    {
+      "slug": "bus-rapid-transit",
+      "title": "Bus rapid transit",
+      "type": "concept",
+      "updated": "2026-01-12",
+      "sources": [
+        {
+          "id": "h-brt-survey",
+          "title": "BRT corridor survey (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Bus rapid transit corridors with dedicated lanes cut average travel times by roughly 30 percent compared with mixed traffic in the surveyed cities.\n\nStations with level boarding and off-board fare payment reduced dwell time to under 20 seconds per stop.\n\nCapital cost per kilometre was about 9 million dollars, far below light rail."
+    },
+    {
+      "slug": "light-rail",
+      "title": "Light rail",
+      "type": "concept",
+      "updated": "2025-11-03",
+      "sources": [
+        {
+          "id": "h-lrt-review",
+          "title": "Light rail review (synthetic)",
+          "format": "docx"
+        }
+      ],
+      "content": "Light rail lines carry between 10,000 and 20,000 passengers per hour per direction at peak.\n\nConstruction cost averaged 60 million dollars per kilometre in the sampled projects.\n\nLines are expected to operate for at least 50 years with scheduled renewal of track and vehicles."
+    },
+    {
+      "slug": "fare-policy",
+      "title": "Fare policy",
+      "type": "concept",
+      "updated": "2026-02-18",
+      "sources": [
+        {
+          "id": "h-fare-pilots",
+          "title": "Fare-free pilots (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Fare-free pilots in three mid-sized cities raised weekday ridership by 20 to 35 percent in the first year.\n\nOperating subsidies had to grow by about 15 percent to cover the lost fare revenue.\n\nSurveys found that a share of new riders were former walkers and cyclists rather than former drivers."
+    },
+    {
+      "slug": "fare-policy-2022",
+      "title": "Fare policy notes (2022)",
+      "type": "concept",
+      "updated": "2022-09-30",
+      "sources": [
+        {
+          "id": "h-fare-2022",
+          "title": "Early fare notes 2022 (synthetic)",
+          "format": "md"
+        }
+      ],
+      "content": "Fare-free pilots raised weekday ridership by about 8 percent in the first year.\n\nOperating subsidies rose by roughly 15 percent to replace fare revenue."
+    },
+    {
+      "slug": "electric-buses",
+      "title": "Electric buses",
+      "type": "concept",
+      "updated": "2026-03-05",
+      "sources": [
+        {
+          "id": "h-ebus-depot",
+          "title": "Depot trial report (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Battery-electric buses reduced fuel and maintenance spending by about 40 percent per kilometre in depot trials.\n\nWinter range fell by up to 25 percent when cabin heating relied on the battery.\n\nOvernight depot charging was sufficient for routes under 200 kilometres a day."
+    },
+    {
+      "slug": "electric-buses-field",
+      "title": "Electric buses in service",
+      "type": "concept",
+      "updated": "2026-04-10",
+      "sources": [
+        {
+          "id": "h-ebus-field",
+          "title": "Field service data (synthetic)",
+          "format": "xlsx"
+        }
+      ],
+      "content": "In field service, battery-electric buses reduced fuel and maintenance spending by about 22 percent per kilometre.\n\nDrivers reported smoother acceleration and lower cabin noise."
+    },
+    {
+      "slug": "bike-lanes",
+      "title": "Bike lanes",
+      "type": "concept",
+      "updated": "2025-08-14",
+      "sources": [
+        {
+          "id": "h-bike-study",
+          "title": "Bike lane safety study (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Protected bike lanes were linked to a 28 percent drop in cyclist injuries on treated streets.\n\nPainted lanes without physical separation showed no measurable change in injury rates.\n\nLane continuity across intersections mattered more than lane width."
+    },
+    {
+      "slug": "congestion-pricing",
+      "title": "Congestion pricing",
+      "type": "concept",
+      "updated": "2025-12-09",
+      "sources": [
+        {
+          "id": "h-cordon",
+          "title": "Cordon charge evaluation (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "A cordon charge of 15 dollars reduced vehicle entries into the central zone by 18 percent.\n\nRevenue was earmarked for transit improvements.\n\nPublic support rose after the first year once travel times improved."
+    },
+    {
+      "slug": "congestion-pricing-critique",
+      "title": "Congestion pricing critique",
+      "type": "concept",
+      "updated": "2026-01-20",
+      "sources": [
+        {
+          "id": "h-cordon-critique",
+          "title": "Critics and monitoring (synthetic)",
+          "format": "html"
+        }
+      ],
+      "content": "Critics argued that a cordon charge pushes traffic onto neighbouring streets.\n\nMonitoring found no increase in traffic on the surrounding streets after the charge."
+    },
+    {
+      "slug": "transit-oriented-development",
+      "title": "Transit-oriented development",
+      "type": "concept",
+      "updated": "2025-10-01",
+      "sources": [
+        {
+          "id": "h-tod",
+          "title": "TOD district study (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Housing built within 800 metres of a station generated 2.3 times more trips by transit than comparable housing elsewhere.\n\nParking minimums were removed in the study districts.\n\nRetail vacancy near stations stayed below the regional average."
+    },
+    {
+      "slug": "parking-policy",
+      "title": "Parking policy",
+      "type": "concept",
+      "updated": "2026-01-05",
+      "sources": [
+        {
+          "id": "h-parking",
+          "title": "Parking policy memo (synthetic)",
+          "format": "docx"
+        }
+      ],
+      "content": "Parking minimums were not removed in the study districts.\n\nCurbside pricing was introduced on the busiest commercial streets."
+    },
+    {
+      "slug": "accessibility",
+      "title": "Accessibility",
+      "type": "concept",
+      "updated": "2026-02-02",
+      "sources": [
+        {
+          "id": "h-access-audit",
+          "title": "Accessibility audit (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Only 54 percent of bus stops in the audited network met step-free access standards.\n\nAudible announcements were present on all rail vehicles but only on a minority of buses.\n\nComplaints about missing ramps fell by half after the retrofit programme."
+    },
+    {
+      "slug": "accessibility-audit-2020",
+      "title": "Accessibility audit (2020)",
+      "type": "concept",
+      "updated": "2020-06-15",
+      "sources": [
+        {
+          "id": "h-access-2020",
+          "title": "2020 audit (synthetic)",
+          "format": "md"
+        }
+      ],
+      "content": "Only 31 percent of bus stops in the audited network met step-free access standards."
+    },
+    {
+      "slug": "ridership-recovery",
+      "title": "Ridership recovery",
+      "type": "concept",
+      "updated": "2026-03-22",
+      "sources": [
+        {
+          "id": "h-ridership-city",
+          "title": "City ridership report (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Weekday ridership recovered to 87 percent of the 2019 level by the end of 2025.\n\nWeekend ridership exceeded its 2019 level.\n\nPeak-hour crowding remained below pre-pandemic levels on most lines."
+    },
+    {
+      "slug": "ridership-recovery-regional",
+      "title": "Regional ridership recovery",
+      "type": "concept",
+      "updated": "2026-03-30",
+      "sources": [
+        {
+          "id": "h-ridership-region",
+          "title": "Regional ridership report (synthetic)",
+          "format": "xlsx"
+        }
+      ],
+      "content": "Weekday ridership in the region reached 92 percent of the 2019 level by the end of 2025.\n\nCommuter rail recovered faster than urban bus services."
+    },
+    {
+      "slug": "signal-priority",
+      "title": "Signal priority",
+      "type": "concept",
+      "updated": "2025-09-12",
+      "sources": [
+        {
+          "id": "h-signals",
+          "title": "Signal priority pilot (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Transit signal priority shortened bus journey times by 6 to 10 percent on equipped corridors.\n\nBenefits were largest where signals were close together.\n\nEmergency vehicle pre-emption always overrides priority requests."
+    },
+    {
+      "slug": "maintenance-costs",
+      "title": "Maintenance costs",
+      "type": "concept",
+      "updated": "2025-07-07",
+      "sources": [
+        {
+          "id": "h-maint",
+          "title": "Fleet maintenance review (synthetic)",
+          "format": "pdf"
+        }
+      ],
+      "content": "Annual maintenance for a bus averages 28,000 dollars.\n\nRail vehicle maintenance is typically cheaper per passenger-kilometre than bus maintenance.\n\nDeferred maintenance raised failure rates by 12 percent within two years."
+    },
+    {
+      "slug": "rail-economics",
+      "title": "Rail economics",
+      "type": "concept",
+      "updated": "2026-02-27",
+      "sources": [
+        {
+          "id": "h-rail-econ",
+          "title": "Rail operating economics (synthetic)",
+          "format": "docx"
+        }
+      ],
+      "content": "Rail vehicle maintenance is typically more expensive per passenger-kilometre than bus maintenance.\n\nFixed infrastructure costs dominate the budget of rail operators."
+    }
+  ]
+}

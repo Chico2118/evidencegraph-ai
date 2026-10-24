@@ -1,0 +1,998 @@
+{
+  "schemaVersion": 1,
+  "fixtures": {
+    "corpusPages": 13,
+    "corpusPassages": 33,
+    "answerableQuestions": 15,
+    "unanswerableQuestions": 5,
+    "citationCases": 18,
+    "labeledCitations": 24,
+    "goldContradictions": 5,
+    "knownNonConflicts": 3,
+    "corpusNote": "SYNTHETIC fixture. Invented battery-research notes written for testing; none of these statements are real findings and the numbers must not be cited."
+  },
+  "retrieval": {
+    "naturalLanguage": {
+      "baseline": {
+        "hitAt": {
+          "@1": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 15
+          },
+          "@3": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 15
+          },
+          "@5": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 15
+          },
+          "@10": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 15
+          }
+        },
+        "recallAt": {
+          "@1": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 15
+          },
+          "@3": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 15
+          },
+          "@5": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 15
+          },
+          "@10": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 15
+          }
+        },
+        "mrr": {
+          "value": 0,
+          "numerator": 0,
+          "denominator": 15
+        },
+        "perQuestion": [
+          {
+            "id": "q01",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q02",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q03",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q04",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q05",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q06",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q07",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q08",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q09",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q10",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q11",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q12",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q13",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q14",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q15",
+            "goldRank": null,
+            "retrieved": []
+          }
+        ]
+      },
+      "improved": {
+        "hitAt": {
+          "@1": {
+            "value": 0.8667,
+            "numerator": 13,
+            "denominator": 15
+          },
+          "@3": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          },
+          "@5": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          },
+          "@10": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          }
+        },
+        "recallAt": {
+          "@1": {
+            "value": 0.7333,
+            "numerator": 11,
+            "denominator": 15
+          },
+          "@3": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          },
+          "@5": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          },
+          "@10": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          }
+        },
+        "mrr": {
+          "value": 0.9333,
+          "numerator": 14,
+          "denominator": 15
+        },
+        "perQuestion": [
+          {
+            "id": "q01",
+            "goldRank": 2,
+            "retrieved": [
+              "aging-older-notes",
+              "cell-aging",
+              "cathode-chemistries",
+              "lfp-field-data",
+              "thermal-management",
+              "pack-design",
+              "fast-charging",
+              "energy-density-trends",
+              "battery-recycling",
+              "solid-state-batteries"
+            ]
+          },
+          {
+            "id": "q02",
+            "goldRank": 2,
+            "retrieved": [
+              "aging-older-notes",
+              "cell-aging",
+              "cathode-chemistries",
+              "lfp-field-data",
+              "energy-density-trends",
+              "battery-recycling",
+              "solid-state-batteries",
+              "thermal-management",
+              "recycling-policy",
+              "pack-design"
+            ]
+          },
+          {
+            "id": "q03",
+            "goldRank": 1,
+            "retrieved": [
+              "fast-charging",
+              "charging-guidelines",
+              "lfp-field-data",
+              "thermal-management",
+              "cell-aging",
+              "battery-safety",
+              "aging-older-notes",
+              "cathode-chemistries"
+            ]
+          },
+          {
+            "id": "q04",
+            "goldRank": 1,
+            "retrieved": [
+              "fast-charging",
+              "charging-guidelines",
+              "lfp-field-data",
+              "energy-density-trends",
+              "aging-older-notes",
+              "cathode-chemistries",
+              "cell-aging"
+            ]
+          },
+          {
+            "id": "q05",
+            "goldRank": 1,
+            "retrieved": [
+              "cathode-chemistries",
+              "energy-density-trends",
+              "lfp-field-data",
+              "aging-older-notes",
+              "battery-recycling",
+              "cell-aging"
+            ]
+          },
+          {
+            "id": "q06",
+            "goldRank": 1,
+            "retrieved": [
+              "lfp-field-data",
+              "cathode-chemistries",
+              "cell-aging",
+              "aging-older-notes",
+              "energy-density-trends",
+              "battery-recycling",
+              "solid-state-batteries",
+              "thermal-management",
+              "recycling-policy",
+              "pack-design"
+            ]
+          },
+          {
+            "id": "q07",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-recycling",
+              "recycling-policy",
+              "cathode-chemistries"
+            ]
+          },
+          {
+            "id": "q08",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-recycling",
+              "recycling-policy",
+              "battery-safety",
+              "solid-state-batteries"
+            ]
+          },
+          {
+            "id": "q09",
+            "goldRank": 1,
+            "retrieved": [
+              "energy-density-trends",
+              "solid-state-batteries",
+              "cathode-chemistries",
+              "battery-recycling"
+            ]
+          },
+          {
+            "id": "q10",
+            "goldRank": 1,
+            "retrieved": [
+              "solid-state-batteries",
+              "energy-density-trends",
+              "cell-aging",
+              "aging-older-notes",
+              "battery-recycling",
+              "thermal-management",
+              "lfp-field-data",
+              "recycling-policy",
+              "pack-design",
+              "cathode-chemistries"
+            ]
+          },
+          {
+            "id": "q11",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-safety",
+              "cell-aging",
+              "charging-guidelines",
+              "fast-charging"
+            ]
+          },
+          {
+            "id": "q12",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-safety",
+              "solid-state-batteries"
+            ]
+          },
+          {
+            "id": "q13",
+            "goldRank": 1,
+            "retrieved": [
+              "thermal-management",
+              "pack-design",
+              "solid-state-batteries",
+              "fast-charging",
+              "cell-aging"
+            ]
+          },
+          {
+            "id": "q14",
+            "goldRank": 1,
+            "retrieved": [
+              "thermal-management"
+            ]
+          },
+          {
+            "id": "q15",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-safety",
+              "thermal-management",
+              "pack-design",
+              "fast-charging",
+              "cell-aging"
+            ]
+          }
+        ]
+      }
+    },
+    "keyword": {
+      "baseline": {
+        "hitAt": {
+          "@1": {
+            "value": 0.8,
+            "numerator": 12,
+            "denominator": 15
+          },
+          "@3": {
+            "value": 0.8667,
+            "numerator": 13,
+            "denominator": 15
+          },
+          "@5": {
+            "value": 0.8667,
+            "numerator": 13,
+            "denominator": 15
+          },
+          "@10": {
+            "value": 0.8667,
+            "numerator": 13,
+            "denominator": 15
+          }
+        },
+        "recallAt": {
+          "@1": {
+            "value": 0.7,
+            "numerator": 10.5,
+            "denominator": 15
+          },
+          "@3": {
+            "value": 0.8333,
+            "numerator": 12.5,
+            "denominator": 15
+          },
+          "@5": {
+            "value": 0.8333,
+            "numerator": 12.5,
+            "denominator": 15
+          },
+          "@10": {
+            "value": 0.8333,
+            "numerator": 12.5,
+            "denominator": 15
+          }
+        },
+        "mrr": {
+          "value": 0.8333,
+          "numerator": 12.5,
+          "denominator": 15
+        },
+        "perQuestion": [
+          {
+            "id": "q01",
+            "goldRank": 1,
+            "retrieved": [
+              "cell-aging"
+            ]
+          },
+          {
+            "id": "q02",
+            "goldRank": 2,
+            "retrieved": [
+              "aging-older-notes",
+              "cell-aging"
+            ]
+          },
+          {
+            "id": "q03",
+            "goldRank": 1,
+            "retrieved": [
+              "fast-charging"
+            ]
+          },
+          {
+            "id": "q04",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "q05",
+            "goldRank": 1,
+            "retrieved": [
+              "cathode-chemistries"
+            ]
+          },
+          {
+            "id": "q06",
+            "goldRank": 1,
+            "retrieved": [
+              "lfp-field-data",
+              "cathode-chemistries"
+            ]
+          },
+          {
+            "id": "q07",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-recycling"
+            ]
+          },
+          {
+            "id": "q08",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-recycling"
+            ]
+          },
+          {
+            "id": "q09",
+            "goldRank": 1,
+            "retrieved": [
+              "energy-density-trends"
+            ]
+          },
+          {
+            "id": "q10",
+            "goldRank": 1,
+            "retrieved": [
+              "solid-state-batteries"
+            ]
+          },
+          {
+            "id": "q11",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-safety"
+            ]
+          },
+          {
+            "id": "q12",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-safety"
+            ]
+          },
+          {
+            "id": "q13",
+            "goldRank": 1,
+            "retrieved": [
+              "pack-design",
+              "thermal-management"
+            ]
+          },
+          {
+            "id": "q14",
+            "goldRank": 1,
+            "retrieved": [
+              "thermal-management"
+            ]
+          },
+          {
+            "id": "q15",
+            "goldRank": null,
+            "retrieved": []
+          }
+        ]
+      },
+      "improved": {
+        "hitAt": {
+          "@1": {
+            "value": 0.8,
+            "numerator": 12,
+            "denominator": 15
+          },
+          "@3": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          },
+          "@5": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          },
+          "@10": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          }
+        },
+        "recallAt": {
+          "@1": {
+            "value": 0.6667,
+            "numerator": 10,
+            "denominator": 15
+          },
+          "@3": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          },
+          "@5": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          },
+          "@10": {
+            "value": 1,
+            "numerator": 15,
+            "denominator": 15
+          }
+        },
+        "mrr": {
+          "value": 0.9,
+          "numerator": 13.5,
+          "denominator": 15
+        },
+        "perQuestion": [
+          {
+            "id": "q01",
+            "goldRank": 2,
+            "retrieved": [
+              "aging-older-notes",
+              "cell-aging",
+              "cathode-chemistries",
+              "lfp-field-data",
+              "thermal-management",
+              "pack-design",
+              "fast-charging"
+            ]
+          },
+          {
+            "id": "q02",
+            "goldRank": 2,
+            "retrieved": [
+              "aging-older-notes",
+              "cell-aging",
+              "cathode-chemistries",
+              "lfp-field-data"
+            ]
+          },
+          {
+            "id": "q03",
+            "goldRank": 1,
+            "retrieved": [
+              "fast-charging",
+              "charging-guidelines",
+              "lfp-field-data",
+              "cell-aging",
+              "battery-safety",
+              "thermal-management",
+              "pack-design",
+              "aging-older-notes",
+              "cathode-chemistries"
+            ]
+          },
+          {
+            "id": "q04",
+            "goldRank": 1,
+            "retrieved": [
+              "fast-charging",
+              "charging-guidelines",
+              "lfp-field-data",
+              "energy-density-trends",
+              "aging-older-notes",
+              "cathode-chemistries",
+              "cell-aging"
+            ]
+          },
+          {
+            "id": "q05",
+            "goldRank": 2,
+            "retrieved": [
+              "energy-density-trends",
+              "cathode-chemistries",
+              "lfp-field-data",
+              "aging-older-notes",
+              "cell-aging"
+            ]
+          },
+          {
+            "id": "q06",
+            "goldRank": 1,
+            "retrieved": [
+              "lfp-field-data",
+              "cathode-chemistries",
+              "cell-aging",
+              "aging-older-notes"
+            ]
+          },
+          {
+            "id": "q07",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-recycling",
+              "recycling-policy",
+              "cathode-chemistries"
+            ]
+          },
+          {
+            "id": "q08",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-recycling",
+              "recycling-policy"
+            ]
+          },
+          {
+            "id": "q09",
+            "goldRank": 1,
+            "retrieved": [
+              "energy-density-trends",
+              "solid-state-batteries",
+              "cathode-chemistries"
+            ]
+          },
+          {
+            "id": "q10",
+            "goldRank": 1,
+            "retrieved": [
+              "solid-state-batteries",
+              "energy-density-trends"
+            ]
+          },
+          {
+            "id": "q11",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-safety",
+              "cell-aging",
+              "charging-guidelines",
+              "fast-charging"
+            ]
+          },
+          {
+            "id": "q12",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-safety",
+              "solid-state-batteries"
+            ]
+          },
+          {
+            "id": "q13",
+            "goldRank": 1,
+            "retrieved": [
+              "pack-design",
+              "thermal-management",
+              "solid-state-batteries",
+              "fast-charging",
+              "cell-aging"
+            ]
+          },
+          {
+            "id": "q14",
+            "goldRank": 1,
+            "retrieved": [
+              "thermal-management"
+            ]
+          },
+          {
+            "id": "q15",
+            "goldRank": 1,
+            "retrieved": [
+              "battery-safety",
+              "thermal-management",
+              "pack-design",
+              "fast-charging",
+              "cell-aging"
+            ]
+          }
+        ]
+      }
+    },
+    "improvedPassageRecallAt3": {
+      "value": 0.9333,
+      "numerator": 14,
+      "denominator": 15
+    }
+  },
+  "abstentionSignal": {
+    "threshold": 0.5,
+    "baseline": {
+      "accuracy": {
+        "value": 0.25,
+        "numerator": 5,
+        "denominator": 20
+      },
+      "answerableKept": {
+        "value": 0,
+        "numerator": 0,
+        "denominator": 15
+      },
+      "unanswerableDetected": {
+        "value": 1,
+        "numerator": 5,
+        "denominator": 5
+      }
+    },
+    "improved": {
+      "accuracy": {
+        "value": 1,
+        "numerator": 20,
+        "denominator": 20
+      },
+      "answerableKept": {
+        "value": 1,
+        "numerator": 15,
+        "denominator": 15
+      },
+      "unanswerableDetected": {
+        "value": 1,
+        "numerator": 5,
+        "denominator": 5
+      }
+    },
+    "sensitivity": [
+      {
+        "threshold": 0.3,
+        "accuracy": {
+          "value": 0.95,
+          "numerator": 19,
+          "denominator": 20
+        },
+        "answerableKept": {
+          "value": 1,
+          "numerator": 15,
+          "denominator": 15
+        },
+        "unanswerableDetected": {
+          "value": 0.8,
+          "numerator": 4,
+          "denominator": 5
+        }
+      },
+      {
+        "threshold": 0.5,
+        "accuracy": {
+          "value": 1,
+          "numerator": 20,
+          "denominator": 20
+        },
+        "answerableKept": {
+          "value": 1,
+          "numerator": 15,
+          "denominator": 15
+        },
+        "unanswerableDetected": {
+          "value": 1,
+          "numerator": 5,
+          "denominator": 5
+        }
+      },
+      {
+        "threshold": 0.7,
+        "accuracy": {
+          "value": 0.85,
+          "numerator": 17,
+          "denominator": 20
+        },
+        "answerableKept": {
+          "value": 0.8,
+          "numerator": 12,
+          "denominator": 15
+        },
+        "unanswerableDetected": {
+          "value": 1,
+          "numerator": 5,
+          "denominator": 5
+        }
+      }
+    ]
+  },
+  "citationValidation": {
+    "baseline": {
+      "accuracy": {
+        "value": 0.8333,
+        "numerator": 20,
+        "denominator": 24
+      },
+      "problemDetectionRate": {
+        "value": 0.7143,
+        "numerator": 10,
+        "denominator": 14
+      },
+      "falseAlarmRate": {
+        "value": 0,
+        "numerator": 0,
+        "denominator": 10
+      },
+      "confusion": {
+        "valid": {
+          "valid": 10,
+          "invalid": 0,
+          "unavailable": 0
+        },
+        "invalid": {
+          "valid": 4,
+          "invalid": 6,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "valid": 0,
+          "invalid": 0,
+          "unavailable": 4
+        }
+      }
+    },
+    "improved": {
+      "accuracy": {
+        "value": 1,
+        "numerator": 24,
+        "denominator": 24
+      },
+      "problemDetectionRate": {
+        "value": 1,
+        "numerator": 14,
+        "denominator": 14
+      },
+      "falseAlarmRate": {
+        "value": 0,
+        "numerator": 0,
+        "denominator": 10
+      },
+      "confusion": {
+        "valid": {
+          "valid": 10,
+          "invalid": 0,
+          "unavailable": 0
+        },
+        "invalid": {
+          "valid": 0,
+          "invalid": 10,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "valid": 0,
+          "invalid": 0,
+          "unavailable": 4
+        }
+      }
+    },
+    "duplicateDetection": {
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1
+    },
+    "claimStateAccuracy": {
+      "value": 1,
+      "numerator": 21,
+      "denominator": 21
+    },
+    "verdictAccuracy": {
+      "value": 1,
+      "numerator": 18,
+      "denominator": 18
+    },
+    "semanticBlindSpots": 1,
+    "disagreements": [
+      {
+        "case": "cc02-fabricated-quote",
+        "claim": 0,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "cc03-quote-in-other-passage",
+        "claim": 0,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "cc08-nonexistent-passage",
+        "claim": 0,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "cc18-mixed",
+        "claim": 1,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      }
+    ]
+  },
+  "contradictions": {
+    "detected": 6,
+    "truePositives": {
+      "value": 1,
+      "numerator": 5,
+      "denominator": 5
+    },
+    "precision": {
+      "value": 0.8333,
+      "numerator": 5,
+      "denominator": 6
+    },
+    "recall": {
+      "value": 1,
+      "numerator": 5,
+      "denominator": 5
+    },
+    "missedGold": [],
+    "knownNonConflictsFlagged": {
+      "value": 0.3333,
+      "numerator": 1,
+      "denominator": 3
+    },
+    "flaggedNonConflicts": [
+      "thermal-management#p1 | thermal-management#p2"
+    ],
+    "unlabeledDetections": []
+  },
+  "limitations": [
+    "Small, synthetic corpora and a few dozen questions, all written by one person: results are a regression guard, not an estimate of real-world accuracy.",
+    "The held-out set was written after development stopped and was run once before any fix, but its author also built the system, so it is held out from tuning, not independent of the author's assumptions.",
+    "Gold labels were written by the same person who built the system; no inter-annotator agreement was measured.",
+    "Citation-validation cases are hand-written failure modes, not sampled model outputs. They show the validator catches what it was designed to catch, not how often real models fail.",
+    "Semantic support (does a passage actually back the claim?) is not measured: it needs human judgment, and no model-based assessor is shipped.",
+    "Model-behavior metrics (citation correctness, unsupported-claim rate, real abstention) require live mode with a model and have not been run for this report.",
+    "The abstention threshold (0.5 term coverage) was fixed before the first run; the sensitivity table shows other values for transparency, not as tuned alternatives."
+  ]
+}

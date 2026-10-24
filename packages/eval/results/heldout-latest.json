@@ -1,0 +1,1725 @@
+{
+  "schemaVersion": 1,
+  "fixtures": {
+    "corpusPages": 18,
+    "corpusPassages": 46,
+    "answerableQuestions": 22,
+    "unanswerableQuestions": 8,
+    "citationCases": 21,
+    "labeledCitations": 160,
+    "goldContradictions": 7,
+    "knownNonConflicts": 4,
+    "corpusNote": "SYNTHETIC HELD-OUT fixture (urban transit). Invented for testing; none of these statements are real findings and the numbers must not be cited."
+  },
+  "retrieval": {
+    "naturalLanguage": {
+      "baseline": {
+        "hitAt": {
+          "@1": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 22
+          },
+          "@3": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 22
+          },
+          "@5": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 22
+          },
+          "@10": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 22
+          }
+        },
+        "recallAt": {
+          "@1": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 22
+          },
+          "@3": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 22
+          },
+          "@5": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 22
+          },
+          "@10": {
+            "value": 0,
+            "numerator": 0,
+            "denominator": 22
+          }
+        },
+        "mrr": {
+          "value": 0,
+          "numerator": 0,
+          "denominator": 22
+        },
+        "perQuestion": [
+          {
+            "id": "a01",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a02",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a03",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a04",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a05",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a06",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a07",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a08",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a09",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a10",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a11",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a12",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a13",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a14",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a15",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a16",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a17",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a18",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a19",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a20",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a21",
+            "goldRank": null,
+            "retrieved": []
+          },
+          {
+            "id": "a22",
+            "goldRank": null,
+            "retrieved": []
+          }
+        ]
+      },
+      "improved": {
+        "hitAt": {
+          "@1": {
+            "value": 0.9545,
+            "numerator": 21,
+            "denominator": 22
+          },
+          "@3": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@5": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@10": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          }
+        },
+        "recallAt": {
+          "@1": {
+            "value": 0.8409,
+            "numerator": 18.5,
+            "denominator": 22
+          },
+          "@3": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@5": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@10": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          }
+        },
+        "mrr": {
+          "value": 0.9773,
+          "numerator": 21.5,
+          "denominator": 22
+        },
+        "perQuestion": [
+          {
+            "id": "a01",
+            "goldRank": 1,
+            "retrieved": [
+              "bus-rapid-transit",
+              "transit-oriented-development",
+              "signal-priority",
+              "ridership-recovery-regional",
+              "congestion-pricing",
+              "maintenance-costs",
+              "accessibility-audit-2020",
+              "rail-economics",
+              "accessibility"
+            ]
+          },
+          {
+            "id": "a02",
+            "goldRank": 1,
+            "retrieved": [
+              "bus-rapid-transit",
+              "accessibility",
+              "transit-oriented-development",
+              "fare-policy-2022",
+              "light-rail",
+              "fare-policy",
+              "accessibility-audit-2020",
+              "rail-economics",
+              "signal-priority",
+              "maintenance-costs"
+            ]
+          },
+          {
+            "id": "a03",
+            "goldRank": 2,
+            "retrieved": [
+              "light-rail",
+              "bus-rapid-transit",
+              "rail-economics",
+              "electric-buses-field",
+              "electric-buses",
+              "maintenance-costs"
+            ]
+          },
+          {
+            "id": "a04",
+            "goldRank": 1,
+            "retrieved": [
+              "light-rail",
+              "ridership-recovery",
+              "rail-economics",
+              "maintenance-costs",
+              "bus-rapid-transit",
+              "ridership-recovery-regional",
+              "electric-buses-field",
+              "accessibility",
+              "electric-buses"
+            ]
+          },
+          {
+            "id": "a05",
+            "goldRank": 1,
+            "retrieved": [
+              "light-rail",
+              "bus-rapid-transit",
+              "rail-economics",
+              "ridership-recovery-regional",
+              "maintenance-costs",
+              "accessibility"
+            ]
+          },
+          {
+            "id": "a06",
+            "goldRank": 1,
+            "retrieved": [
+              "fare-policy",
+              "fare-policy-2022",
+              "bus-rapid-transit",
+              "ridership-recovery-regional",
+              "ridership-recovery"
+            ]
+          },
+          {
+            "id": "a07",
+            "goldRank": 1,
+            "retrieved": [
+              "fare-policy-2022",
+              "fare-policy",
+              "bus-rapid-transit",
+              "congestion-pricing-critique",
+              "parking-policy",
+              "transit-oriented-development"
+            ]
+          },
+          {
+            "id": "a08",
+            "goldRank": 1,
+            "retrieved": [
+              "fare-policy",
+              "ridership-recovery-regional",
+              "ridership-recovery",
+              "fare-policy-2022",
+              "transit-oriented-development",
+              "bus-rapid-transit",
+              "accessibility-audit-2020",
+              "signal-priority",
+              "congestion-pricing",
+              "accessibility"
+            ]
+          },
+          {
+            "id": "a09",
+            "goldRank": 1,
+            "retrieved": [
+              "electric-buses-field",
+              "electric-buses",
+              "maintenance-costs",
+              "rail-economics",
+              "accessibility",
+              "light-rail",
+              "bus-rapid-transit",
+              "accessibility-audit-2020",
+              "parking-policy",
+              "ridership-recovery-regional"
+            ]
+          },
+          {
+            "id": "a10",
+            "goldRank": 1,
+            "retrieved": [
+              "electric-buses",
+              "electric-buses-field",
+              "bus-rapid-transit",
+              "maintenance-costs",
+              "accessibility-audit-2020",
+              "rail-economics",
+              "ridership-recovery-regional",
+              "signal-priority",
+              "accessibility"
+            ]
+          },
+          {
+            "id": "a11",
+            "goldRank": 1,
+            "retrieved": [
+              "electric-buses",
+              "electric-buses-field",
+              "accessibility",
+              "congestion-pricing-critique",
+              "congestion-pricing",
+              "bus-rapid-transit",
+              "maintenance-costs",
+              "accessibility-audit-2020",
+              "parking-policy",
+              "rail-economics"
+            ]
+          },
+          {
+            "id": "a12",
+            "goldRank": 1,
+            "retrieved": [
+              "bike-lanes",
+              "bus-rapid-transit",
+              "electric-buses-field",
+              "congestion-pricing",
+              "electric-buses"
+            ]
+          },
+          {
+            "id": "a13",
+            "goldRank": 1,
+            "retrieved": [
+              "bike-lanes",
+              "bus-rapid-transit",
+              "fare-policy"
+            ]
+          },
+          {
+            "id": "a14",
+            "goldRank": 1,
+            "retrieved": [
+              "bike-lanes",
+              "bus-rapid-transit"
+            ]
+          },
+          {
+            "id": "a15",
+            "goldRank": 1,
+            "retrieved": [
+              "congestion-pricing",
+              "congestion-pricing-critique",
+              "accessibility",
+              "light-rail",
+              "rail-economics",
+              "signal-priority",
+              "maintenance-costs",
+              "electric-buses-field",
+              "electric-buses",
+              "bus-rapid-transit"
+            ]
+          },
+          {
+            "id": "a16",
+            "goldRank": 1,
+            "retrieved": [
+              "congestion-pricing",
+              "congestion-pricing-critique",
+              "parking-policy",
+              "fare-policy-2022",
+              "fare-policy"
+            ]
+          },
+          {
+            "id": "a17",
+            "goldRank": 1,
+            "retrieved": [
+              "congestion-pricing-critique",
+              "parking-policy",
+              "bike-lanes",
+              "congestion-pricing",
+              "bus-rapid-transit"
+            ]
+          },
+          {
+            "id": "a18",
+            "goldRank": 1,
+            "retrieved": [
+              "transit-oriented-development",
+              "bus-rapid-transit",
+              "signal-priority",
+              "congestion-pricing"
+            ]
+          },
+          {
+            "id": "a19",
+            "goldRank": 1,
+            "retrieved": [
+              "accessibility-audit-2020",
+              "accessibility",
+              "fare-policy",
+              "bus-rapid-transit",
+              "fare-policy-2022",
+              "maintenance-costs",
+              "rail-economics",
+              "ridership-recovery-regional",
+              "signal-priority"
+            ]
+          },
+          {
+            "id": "a20",
+            "goldRank": 1,
+            "retrieved": [
+              "ridership-recovery",
+              "ridership-recovery-regional",
+              "bus-rapid-transit",
+              "fare-policy-2022",
+              "fare-policy",
+              "transit-oriented-development"
+            ]
+          },
+          {
+            "id": "a21",
+            "goldRank": 1,
+            "retrieved": [
+              "signal-priority",
+              "electric-buses",
+              "electric-buses-field",
+              "congestion-pricing-critique",
+              "accessibility",
+              "bus-rapid-transit",
+              "maintenance-costs",
+              "accessibility-audit-2020",
+              "parking-policy",
+              "rail-economics"
+            ]
+          },
+          {
+            "id": "a22",
+            "goldRank": 1,
+            "retrieved": [
+              "maintenance-costs",
+              "bike-lanes",
+              "bus-rapid-transit",
+              "rail-economics",
+              "electric-buses-field",
+              "fare-policy",
+              "electric-buses"
+            ]
+          }
+        ]
+      }
+    },
+    "keyword": {
+      "baseline": {
+        "hitAt": {
+          "@1": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@3": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@5": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@10": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          }
+        },
+        "recallAt": {
+          "@1": {
+            "value": 0.8864,
+            "numerator": 19.5,
+            "denominator": 22
+          },
+          "@3": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@5": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@10": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          }
+        },
+        "mrr": {
+          "value": 1,
+          "numerator": 22,
+          "denominator": 22
+        },
+        "perQuestion": [
+          {
+            "id": "a01",
+            "goldRank": 1,
+            "retrieved": [
+              "bus-rapid-transit"
+            ]
+          },
+          {
+            "id": "a02",
+            "goldRank": 1,
+            "retrieved": [
+              "bus-rapid-transit"
+            ]
+          },
+          {
+            "id": "a03",
+            "goldRank": 1,
+            "retrieved": [
+              "bus-rapid-transit"
+            ]
+          },
+          {
+            "id": "a04",
+            "goldRank": 1,
+            "retrieved": [
+              "light-rail"
+            ]
+          },
+          {
+            "id": "a05",
+            "goldRank": 1,
+            "retrieved": [
+              "light-rail"
+            ]
+          },
+          {
+            "id": "a06",
+            "goldRank": 1,
+            "retrieved": [
+              "fare-policy-2022",
+              "fare-policy"
+            ]
+          },
+          {
+            "id": "a07",
+            "goldRank": 1,
+            "retrieved": [
+              "fare-policy-2022",
+              "fare-policy"
+            ]
+          },
+          {
+            "id": "a08",
+            "goldRank": 1,
+            "retrieved": [
+              "fare-policy"
+            ]
+          },
+          {
+            "id": "a09",
+            "goldRank": 1,
+            "retrieved": [
+              "electric-buses-field",
+              "electric-buses"
+            ]
+          },
+          {
+            "id": "a10",
+            "goldRank": 1,
+            "retrieved": [
+              "electric-buses"
+            ]
+          },
+          {
+            "id": "a11",
+            "goldRank": 1,
+            "retrieved": [
+              "electric-buses"
+            ]
+          },
+          {
+            "id": "a12",
+            "goldRank": 1,
+            "retrieved": [
+              "bike-lanes"
+            ]
+          },
+          {
+            "id": "a13",
+            "goldRank": 1,
+            "retrieved": [
+              "bike-lanes"
+            ]
+          },
+          {
+            "id": "a14",
+            "goldRank": 1,
+            "retrieved": [
+              "bike-lanes"
+            ]
+          },
+          {
+            "id": "a15",
+            "goldRank": 1,
+            "retrieved": [
+              "congestion-pricing"
+            ]
+          },
+          {
+            "id": "a16",
+            "goldRank": 1,
+            "retrieved": [
+              "congestion-pricing"
+            ]
+          },
+          {
+            "id": "a17",
+            "goldRank": 1,
+            "retrieved": [
+              "congestion-pricing-critique"
+            ]
+          },
+          {
+            "id": "a18",
+            "goldRank": 1,
+            "retrieved": [
+              "transit-oriented-development"
+            ]
+          },
+          {
+            "id": "a19",
+            "goldRank": 1,
+            "retrieved": [
+              "accessibility-audit-2020",
+              "accessibility"
+            ]
+          },
+          {
+            "id": "a20",
+            "goldRank": 1,
+            "retrieved": [
+              "ridership-recovery",
+              "ridership-recovery-regional"
+            ]
+          },
+          {
+            "id": "a21",
+            "goldRank": 1,
+            "retrieved": [
+              "signal-priority"
+            ]
+          },
+          {
+            "id": "a22",
+            "goldRank": 1,
+            "retrieved": [
+              "maintenance-costs"
+            ]
+          }
+        ]
+      },
+      "improved": {
+        "hitAt": {
+          "@1": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@3": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@5": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@10": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          }
+        },
+        "recallAt": {
+          "@1": {
+            "value": 0.8864,
+            "numerator": 19.5,
+            "denominator": 22
+          },
+          "@3": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@5": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          },
+          "@10": {
+            "value": 1,
+            "numerator": 22,
+            "denominator": 22
+          }
+        },
+        "mrr": {
+          "value": 1,
+          "numerator": 22,
+          "denominator": 22
+        },
+        "perQuestion": [
+          {
+            "id": "a01",
+            "goldRank": 1,
+            "retrieved": [
+              "bus-rapid-transit",
+              "congestion-pricing",
+              "transit-oriented-development",
+              "signal-priority",
+              "maintenance-costs",
+              "accessibility-audit-2020",
+              "rail-economics",
+              "ridership-recovery-regional",
+              "accessibility"
+            ]
+          },
+          {
+            "id": "a02",
+            "goldRank": 1,
+            "retrieved": [
+              "bus-rapid-transit"
+            ]
+          },
+          {
+            "id": "a03",
+            "goldRank": 1,
+            "retrieved": [
+              "bus-rapid-transit",
+              "light-rail",
+              "transit-oriented-development",
+              "signal-priority",
+              "maintenance-costs",
+              "rail-economics",
+              "congestion-pricing",
+              "electric-buses",
+              "electric-buses-field",
+              "accessibility-audit-2020"
+            ]
+          },
+          {
+            "id": "a04",
+            "goldRank": 1,
+            "retrieved": [
+              "light-rail",
+              "ridership-recovery",
+              "rail-economics",
+              "maintenance-costs",
+              "bus-rapid-transit",
+              "ridership-recovery-regional",
+              "electric-buses-field",
+              "accessibility",
+              "electric-buses"
+            ]
+          },
+          {
+            "id": "a05",
+            "goldRank": 1,
+            "retrieved": [
+              "light-rail",
+              "maintenance-costs",
+              "bus-rapid-transit",
+              "rail-economics",
+              "fare-policy-2022",
+              "congestion-pricing",
+              "fare-policy",
+              "ridership-recovery-regional",
+              "accessibility"
+            ]
+          },
+          {
+            "id": "a06",
+            "goldRank": 1,
+            "retrieved": [
+              "fare-policy-2022",
+              "fare-policy",
+              "ridership-recovery-regional",
+              "ridership-recovery",
+              "accessibility-audit-2020",
+              "bus-rapid-transit",
+              "accessibility"
+            ]
+          },
+          {
+            "id": "a07",
+            "goldRank": 1,
+            "retrieved": [
+              "fare-policy-2022",
+              "fare-policy",
+              "accessibility-audit-2020",
+              "rail-economics",
+              "bus-rapid-transit",
+              "accessibility",
+              "light-rail"
+            ]
+          },
+          {
+            "id": "a08",
+            "goldRank": 1,
+            "retrieved": [
+              "fare-policy",
+              "ridership-recovery-regional",
+              "ridership-recovery",
+              "electric-buses-field",
+              "fare-policy-2022",
+              "bike-lanes"
+            ]
+          },
+          {
+            "id": "a09",
+            "goldRank": 1,
+            "retrieved": [
+              "electric-buses-field",
+              "electric-buses",
+              "accessibility",
+              "maintenance-costs",
+              "rail-economics",
+              "bus-rapid-transit",
+              "accessibility-audit-2020",
+              "parking-policy",
+              "ridership-recovery-regional",
+              "signal-priority"
+            ]
+          },
+          {
+            "id": "a10",
+            "goldRank": 1,
+            "retrieved": [
+              "electric-buses",
+              "electric-buses-field"
+            ]
+          },
+          {
+            "id": "a11",
+            "goldRank": 1,
+            "retrieved": [
+              "electric-buses",
+              "congestion-pricing-critique",
+              "congestion-pricing"
+            ]
+          },
+          {
+            "id": "a12",
+            "goldRank": 1,
+            "retrieved": [
+              "bike-lanes",
+              "bus-rapid-transit"
+            ]
+          },
+          {
+            "id": "a13",
+            "goldRank": 1,
+            "retrieved": [
+              "bike-lanes",
+              "maintenance-costs",
+              "bus-rapid-transit",
+              "fare-policy"
+            ]
+          },
+          {
+            "id": "a14",
+            "goldRank": 1,
+            "retrieved": [
+              "bike-lanes"
+            ]
+          },
+          {
+            "id": "a15",
+            "goldRank": 1,
+            "retrieved": [
+              "congestion-pricing",
+              "congestion-pricing-critique",
+              "rail-economics",
+              "signal-priority",
+              "maintenance-costs",
+              "accessibility",
+              "light-rail"
+            ]
+          },
+          {
+            "id": "a16",
+            "goldRank": 1,
+            "retrieved": [
+              "congestion-pricing",
+              "congestion-pricing-critique",
+              "transit-oriented-development",
+              "bus-rapid-transit",
+              "fare-policy-2022",
+              "fare-policy",
+              "signal-priority"
+            ]
+          },
+          {
+            "id": "a17",
+            "goldRank": 1,
+            "retrieved": [
+              "congestion-pricing-critique",
+              "parking-policy",
+              "bike-lanes",
+              "congestion-pricing",
+              "bus-rapid-transit"
+            ]
+          },
+          {
+            "id": "a18",
+            "goldRank": 1,
+            "retrieved": [
+              "transit-oriented-development",
+              "bus-rapid-transit",
+              "signal-priority",
+              "congestion-pricing"
+            ]
+          },
+          {
+            "id": "a19",
+            "goldRank": 1,
+            "retrieved": [
+              "accessibility-audit-2020",
+              "accessibility",
+              "bus-rapid-transit",
+              "fare-policy-2022",
+              "fare-policy",
+              "maintenance-costs",
+              "rail-economics",
+              "ridership-recovery-regional",
+              "signal-priority"
+            ]
+          },
+          {
+            "id": "a20",
+            "goldRank": 1,
+            "retrieved": [
+              "ridership-recovery",
+              "ridership-recovery-regional",
+              "fare-policy-2022",
+              "fare-policy",
+              "bus-rapid-transit"
+            ]
+          },
+          {
+            "id": "a21",
+            "goldRank": 1,
+            "retrieved": [
+              "signal-priority",
+              "bus-rapid-transit",
+              "congestion-pricing",
+              "transit-oriented-development",
+              "maintenance-costs",
+              "accessibility-audit-2020",
+              "rail-economics",
+              "ridership-recovery-regional",
+              "accessibility"
+            ]
+          },
+          {
+            "id": "a22",
+            "goldRank": 1,
+            "retrieved": [
+              "maintenance-costs",
+              "bike-lanes",
+              "rail-economics",
+              "electric-buses-field",
+              "fare-policy",
+              "electric-buses"
+            ]
+          }
+        ]
+      }
+    },
+    "improvedPassageRecallAt3": {
+      "value": 1,
+      "numerator": 22,
+      "denominator": 22
+    }
+  },
+  "abstentionSignal": {
+    "threshold": 0.5,
+    "baseline": {
+      "accuracy": {
+        "value": 0.2667,
+        "numerator": 8,
+        "denominator": 30
+      },
+      "answerableKept": {
+        "value": 0,
+        "numerator": 0,
+        "denominator": 22
+      },
+      "unanswerableDetected": {
+        "value": 1,
+        "numerator": 8,
+        "denominator": 8
+      }
+    },
+    "improved": {
+      "accuracy": {
+        "value": 0.8,
+        "numerator": 24,
+        "denominator": 30
+      },
+      "answerableKept": {
+        "value": 0.8182,
+        "numerator": 18,
+        "denominator": 22
+      },
+      "unanswerableDetected": {
+        "value": 0.75,
+        "numerator": 6,
+        "denominator": 8
+      }
+    },
+    "sensitivity": [
+      {
+        "threshold": 0.3,
+        "accuracy": {
+          "value": 0.8667,
+          "numerator": 26,
+          "denominator": 30
+        },
+        "answerableKept": {
+          "value": 0.9545,
+          "numerator": 21,
+          "denominator": 22
+        },
+        "unanswerableDetected": {
+          "value": 0.625,
+          "numerator": 5,
+          "denominator": 8
+        }
+      },
+      {
+        "threshold": 0.5,
+        "accuracy": {
+          "value": 0.8,
+          "numerator": 24,
+          "denominator": 30
+        },
+        "answerableKept": {
+          "value": 0.8182,
+          "numerator": 18,
+          "denominator": 22
+        },
+        "unanswerableDetected": {
+          "value": 0.75,
+          "numerator": 6,
+          "denominator": 8
+        }
+      },
+      {
+        "threshold": 0.7,
+        "accuracy": {
+          "value": 0.5667,
+          "numerator": 17,
+          "denominator": 30
+        },
+        "answerableKept": {
+          "value": 0.4091,
+          "numerator": 9,
+          "denominator": 22
+        },
+        "unanswerableDetected": {
+          "value": 1,
+          "numerator": 8,
+          "denominator": 8
+        }
+      }
+    ]
+  },
+  "citationValidation": {
+    "baseline": {
+      "accuracy": {
+        "value": 0.65,
+        "numerator": 104,
+        "denominator": 160
+      },
+      "problemDetectionRate": {
+        "value": 0.3708,
+        "numerator": 33,
+        "denominator": 89
+      },
+      "falseAlarmRate": {
+        "value": 0,
+        "numerator": 0,
+        "denominator": 71
+      },
+      "confusion": {
+        "valid": {
+          "valid": 71,
+          "invalid": 0,
+          "unavailable": 0
+        },
+        "invalid": {
+          "valid": 56,
+          "invalid": 14,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "valid": 0,
+          "invalid": 0,
+          "unavailable": 19
+        }
+      }
+    },
+    "improved": {
+      "accuracy": {
+        "value": 1,
+        "numerator": 160,
+        "denominator": 160
+      },
+      "problemDetectionRate": {
+        "value": 1,
+        "numerator": 89,
+        "denominator": 89
+      },
+      "falseAlarmRate": {
+        "value": 0,
+        "numerator": 0,
+        "denominator": 71
+      },
+      "confusion": {
+        "valid": {
+          "valid": 71,
+          "invalid": 0,
+          "unavailable": 0
+        },
+        "invalid": {
+          "valid": 0,
+          "invalid": 70,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "valid": 0,
+          "invalid": 0,
+          "unavailable": 19
+        }
+      }
+    },
+    "duplicateDetection": {
+      "value": null,
+      "numerator": 0,
+      "denominator": 0
+    },
+    "claimStateAccuracy": {
+      "value": 1,
+      "numerator": 161,
+      "denominator": 161
+    },
+    "verdictAccuracy": {
+      "value": 1,
+      "numerator": 21,
+      "denominator": 21
+    },
+    "semanticBlindSpots": 0,
+    "disagreements": [
+      {
+        "case": "h-bus-rapid-transit-p1",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bus-rapid-transit-p1",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bus-rapid-transit-p1",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bus-rapid-transit-p1",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bus-rapid-transit-p2",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bus-rapid-transit-p2",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bus-rapid-transit-p2",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bus-rapid-transit-p2",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bus-rapid-transit-p3",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bus-rapid-transit-p3",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bus-rapid-transit-p3",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bus-rapid-transit-p3",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-light-rail-p1",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-light-rail-p1",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-light-rail-p1",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-light-rail-p1",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-light-rail-p2",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-light-rail-p2",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-light-rail-p2",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-light-rail-p2",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-fare-policy-p1",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-fare-policy-p1",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-fare-policy-p1",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-fare-policy-p1",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-electric-buses-p2",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-electric-buses-p2",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-electric-buses-p2",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-electric-buses-p2",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bike-lanes-p1",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bike-lanes-p1",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bike-lanes-p1",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-bike-lanes-p1",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-congestion-pricing-p1",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-congestion-pricing-p1",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-congestion-pricing-p1",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-congestion-pricing-p1",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-transit-oriented-development-p1",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-transit-oriented-development-p1",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-transit-oriented-development-p1",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-transit-oriented-development-p1",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-accessibility-p1",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-accessibility-p1",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-accessibility-p1",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-accessibility-p1",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-ridership-recovery-p1",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-ridership-recovery-p1",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-ridership-recovery-p1",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-ridership-recovery-p1",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-signal-priority-p1",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-signal-priority-p1",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-signal-priority-p1",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-signal-priority-p1",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-maintenance-costs-p3",
+        "claim": 5,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-maintenance-costs-p3",
+        "claim": 6,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-maintenance-costs-p3",
+        "claim": 7,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      },
+      {
+        "case": "h-maintenance-costs-p3",
+        "claim": 8,
+        "citation": 0,
+        "expected": "invalid",
+        "improved": "invalid",
+        "baseline": "valid"
+      }
+    ]
+  },
+  "contradictions": {
+    "detected": 5,
+    "truePositives": {
+      "value": 0.7143,
+      "numerator": 5,
+      "denominator": 7
+    },
+    "precision": {
+      "value": 1,
+      "numerator": 5,
+      "denominator": 5
+    },
+    "recall": {
+      "value": 0.7143,
+      "numerator": 5,
+      "denominator": 7
+    },
+    "missedGold": [
+      "congestion-pricing-critique#p1 | congestion-pricing-critique#p2",
+      "maintenance-costs#p2 | rail-economics#p1"
+    ],
+    "knownNonConflictsFlagged": {
+      "value": 0,
+      "numerator": 0,
+      "denominator": 4
+    },
+    "flaggedNonConflicts": [],
+    "unlabeledDetections": []
+  },
+  "limitations": [
+    "Small, synthetic corpora and a few dozen questions, all written by one person: results are a regression guard, not an estimate of real-world accuracy.",
+    "The held-out set was written after development stopped and was run once before any fix, but its author also built the system, so it is held out from tuning, not independent of the author's assumptions.",
+    "Gold labels were written by the same person who built the system; no inter-annotator agreement was measured.",
+    "Citation-validation cases are hand-written failure modes, not sampled model outputs. They show the validator catches what it was designed to catch, not how often real models fail.",
+    "Semantic support (does a passage actually back the claim?) is not measured: it needs human judgment, and no model-based assessor is shipped.",
+    "Model-behavior metrics (citation correctness, unsupported-claim rate, real abstention) require live mode with a model and have not been run for this report.",
+    "The abstention threshold (0.5 term coverage) was fixed before the first run; the sensitivity table shows other values for transparency, not as tuned alternatives."
+  ]
+}
